@@ -1,0 +1,1606 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="A 90-day growth plan for Underdog from Charls Pasion.">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Underdog Growth Plan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: Underdog's own world. White page, a serif that speaks softly, one collar-red accent and one rainbow word.
+   One drawing per idea: an invite tree that grows, a Seattle map that lights up, a calendar that fills, a funnel that loops. */
+:root{
+  --bg:#ffffff; --bg-2:#f7f5f2; --card:#fcfbf9;
+  --ink:#141317; --fg:#24222a; --muted:#66626d; --line:#e6e2dd;
+  --forest:#c8395f; --sage:#9a7a58; --sage-soft:rgba(200,57,95,.08); --water:#ebeef3;
+  --amber:#d9821f; --amber-soft:rgba(217,130,31,.13);
+  --glow-teal:rgba(120,140,255,.16); --glow-amber:rgba(255,170,80,.16); --glow-sage:rgba(240,90,130,.13); --glow-teal-0:rgba(120,140,255,0); --glow-amber-0:rgba(255,170,80,0); --glow-sage-0:rgba(240,90,130,0);
+  --btn-bg:#141317; --btn-fg:#ffffff; --red:#d6383f;
+  --rb:linear-gradient(90deg,#ff5f6d,#ffa64d,#e8c93a,#4cc38a,#4f9dff,#9b6dff);
+  --display:"Instrument Serif","Iowan Old Style",Georgia,serif;
+  --body:"Geist",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111014; --bg-2:#0c0b0e; --card:#18161c; --ink:#f5f2ee; --fg:#e6e2dd; --muted:#a29da8; --line:#2a2730;
+    --forest:#ff7d9c; --sage:#d2b08a; --sage-soft:rgba(255,125,156,.12); --water:#1b1f2a;
+    --amber:#f2a64e; --amber-soft:rgba(242,166,78,.16);
+    --glow-teal:rgba(110,130,255,.14); --glow-amber:rgba(255,160,70,.11); --glow-sage:rgba(255,110,150,.11);
+    --btn-bg:#f5f2ee; --btn-fg:#141317; --red:#ff6b70; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111014; --bg-2:#0c0b0e; --card:#18161c; --ink:#f5f2ee; --fg:#e6e2dd; --muted:#a29da8; --line:#2a2730;
+  --forest:#ff7d9c; --sage:#d2b08a; --sage-soft:rgba(255,125,156,.12); --water:#1b1f2a;
+  --amber:#f2a64e; --amber-soft:rgba(242,166,78,.16);
+  --glow-teal:rgba(110,130,255,.14); --glow-amber:rgba(255,160,70,.11); --glow-sage:rgba(255,110,150,.11);
+  --btn-bg:#f5f2ee; --btn-fg:#141317; --red:#ff6b70; color-scheme:dark;
+}
+section.ink{--bg:#141317; --bg-2:#0f0e12; --card:#1d1b22; --ink:#f5f2ee; --fg:#e6e2dd; --muted:#aaa5b0; --line:#2d2a33;
+  --forest:#ff7d9c; --sage:#d2b08a; --sage-soft:rgba(255,125,156,.14); --amber:#f2a64e; --amber-soft:rgba(242,166,78,.18);
+  background:var(--bg); color:var(--fg)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.narrow{max-width:620px}
+h1,h2,h3{font-family:var(--display);font-weight:300;color:var(--ink);text-wrap:balance;margin:0;line-height:1.08}
+h1{font-size:clamp(46px,8vw,88px);letter-spacing:-.01em}
+h2{font-size:clamp(32px,4.6vw,54px)}
+h3{font-size:clamp(21px,2.6vw,26px);font-weight:400}
+p{margin:0}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-weight:600}
+.muted{color:var(--muted)}
+.lead{font-size:clamp(17px,2vw,21px);line-height:1.45}
+.src{font-size:12.5px;color:var(--muted)}
+.src a{text-decoration:none;border-bottom:1px solid var(--line)}
+.src a:hover{border-color:var(--sage)}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{font-family:var(--display);font-size:20px;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand small{font-family:var(--body);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+nav{display:flex;gap:18px;align-items:center;font-size:14px}
+nav a{text-decoration:none;color:var(--fg);opacity:.85}
+nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
+@media (max-width:760px){nav .navlink{display:none}}
+.toggle{border:1px solid var(--line);background:transparent;color:var(--fg);border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.toggle:hover{border-color:var(--sage)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--btn-bg);color:var(--btn-fg);text-decoration:none;border-radius:999px;padding:12px 22px;font-size:15px;font-weight:600;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(21,43,45,.18)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--sage)}
+.arrow{display:inline-block;animation:nudge 1.6s ease-in-out infinite}
+.arrow.down{animation-name:nudge-down}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+@keyframes nudge-down{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+.btn:focus-visible,.toggle:focus-visible,a:focus-visible{outline:2px solid var(--sage);outline-offset:3px}
+
+/* reveal on scroll: visible at rest, settles in */
+.rv{opacity:.55;transform:translateY(12px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *,*::before,*::after{animation:none!important;transition:none!important} .rv{opacity:1;transform:none}}
+
+/* hero + skyline */
+.hero{position:relative;overflow:hidden;padding-block:clamp(56px,9vw,110px) 0}
+.hero .copy{position:relative;z-index:2;max-width:640px}
+.hero h1{margin:16px 0 18px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.skyline{position:relative;margin-top:clamp(20px,4vw,48px);margin-bottom:34px;height:clamp(210px,30vw,340px);--mix:0;cursor:ew-resize}
+.skyline canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.skyline svg{position:absolute;inset:0;width:100%;height:100%;display:block;overflow:visible}
+.skyline .city{transition:opacity .5s ease;transform:translate(var(--px),var(--py));will-change:transform}
+.skyline .sea{opacity:calc(1 - var(--mix))}
+.skyline .sf{opacity:var(--mix)}
+.skyline .draw{fill:none;stroke:var(--ink);stroke-width:1.4;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:4000;stroke-dashoffset:4000;animation:draw 4.2s ease-out forwards}
+.skyline .mtn{stroke:var(--sage);stroke-width:1.2;animation-delay:.2s}
+.skyline .water{fill:none;stroke:var(--sage);stroke-opacity:.6;stroke-width:1;stroke-dasharray:4000;stroke-dashoffset:4000;animation:draw 3s 1.8s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.citylabels{position:absolute;left:0;right:0;bottom:-30px;display:flex;justify-content:space-between;font-family:var(--display);font-style:italic;font-size:15px;color:var(--muted);pointer-events:none;padding:0 4px}
+.citylabels span{transition:color .4s,opacity .4s}
+.citylabels .l{opacity:calc(1 - var(--mix)*.6)}
+.citylabels .r{opacity:calc(.4 + var(--mix)*.6)}
+.citylabels .hint{font-style:normal;font-family:var(--body);font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.7}
+@media (hover:none){.citylabels .hint{display:none}}
+
+/* hover life, in Underdog's register: things lift a little and settle */
+.tile,.job,.post,.fact,.counts div,.ask{transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.tile:hover,.job:hover,.post:hover,.ask:hover{transform:translateY(-2px);border-color:var(--sage);box-shadow:0 10px 30px rgba(21,43,45,.08)}
+.fact:hover,.counts div:hover{background:var(--sage-soft)}
+.map .node{cursor:default}
+.map .node:hover circle.dot{r:7}
+.map .node:hover text{fill:var(--forest)}
+.tl .ev:hover::before{background:var(--forest);box-shadow:0 0 0 6px var(--sage-soft)}
+.tbl tbody tr{transition:background .2s}
+.tbl tbody tr:hover{background:var(--sage-soft)}
+
+/* ambient color fields, like their blurred photography: slow, soft, never behind body text */
+section,.hero{position:relative}
+.glows{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.glows i{position:absolute;animation:glow 22s ease-in-out infinite}
+.glows .t{width:820px;height:820px;background:radial-gradient(circle closest-side,var(--glow-teal) 0%,var(--glow-teal-0) 72%);right:-300px;top:-120px}
+.glows .a{width:720px;height:720px;background:radial-gradient(circle closest-side,var(--glow-amber) 0%,var(--glow-amber-0) 72%);left:-300px;bottom:-340px;animation-delay:-9s}
+.glows .s{width:680px;height:680px;background:radial-gradient(circle closest-side,var(--glow-sage) 0%,var(--glow-sage-0) 72%);right:14%;bottom:-320px;animation-delay:-15s}
+@keyframes glow{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-30px,20px) scale(1.08)}}
+section>.wrap,.hero>.wrap{position:relative;z-index:1}
+@media (max-width:720px){.glows i{opacity:.7}}
+
+/* scroll progress */
+.progress{position:absolute;left:0;right:0;bottom:-1px;height:2px;background:transparent}
+.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--sage),var(--amber));transition:width .15s linear}
+
+/* at a glance */
+.glance{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:clamp(28px,4vw,44px) 0 clamp(36px,5vw,56px)}
+.glance div{background:var(--card);padding:16px 18px;min-width:0}
+.glance b{display:block;font-family:var(--display);font-weight:300;font-size:30px;color:var(--ink);line-height:1;margin-bottom:6px;font-variant-numeric:tabular-nums}
+.glance span{font-size:12.5px;color:var(--muted)}
+@media (max-width:820px){.glance{grid-template-columns:repeat(2,1fr)}.glance div:last-child{grid-column:span 2}}
+
+/* amber = act on this */
+.friday a{border-left:3px solid var(--amber)}
+.friday .go{color:var(--amber)}
+.tag.due{background:var(--amber-soft);color:var(--amber);border:1px solid var(--amber)}
+.tl .ev.next .when{color:var(--amber)}
+.tl .ev.next::before{background:var(--amber);box-shadow:0 0 0 5px var(--amber-soft)}
+.funnel.in .stage.key{fill:var(--amber)}
+.corridor .stop.home circle{fill:var(--amber);stroke:var(--amber)}
+.counts b{background:linear-gradient(120deg,var(--ink),var(--forest));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* poem interlude, their homepage move: scattered serif lines that arrive one at a time */
+.poem{padding-block:clamp(72px,11vw,150px)}
+.poem .wrap{display:grid;gap:clamp(18px,3vw,34px)}
+.poem p{font-family:var(--display);font-weight:300;font-size:clamp(28px,4.6vw,56px);line-height:1.15;color:var(--ink);opacity:.35;transform:translateY(10px);transition:opacity .9s ease,transform .9s ease;text-wrap:balance}
+.poem.in p{opacity:1;transform:none}
+.poem.in p:nth-child(2){transition-delay:.35s}.poem.in p:nth-child(3){transition-delay:.7s}.poem.in p:nth-child(4){transition-delay:1.05s}
+.poem p:nth-child(1){max-width:520px}
+.poem p:nth-child(2){justify-self:center;max-width:560px;text-align:center}
+.poem p:nth-child(3){justify-self:end;max-width:520px;text-align:right}
+.poem p:nth-child(4){justify-self:center;color:var(--sage);font-style:italic;font-size:clamp(22px,3.2vw,36px)}
+
+/* map route between the four meetup rooms */
+.map .route{fill:none;stroke:var(--sage);stroke-width:1.2;stroke-dasharray:100;stroke-dashoffset:100;transition:stroke-dashoffset 2.6s .6s ease;opacity:.8}
+.map.in .route{stroke-dashoffset:0}
+
+/* event links: a quiet underline and an arrow, so they read as clickable */
+.tl .what b a{text-decoration:none;color:inherit;border-bottom:1px solid var(--line);transition:border-color .2s,color .2s}
+.tl .what b a:hover{border-color:var(--amber);color:var(--forest)}
+.tl .what b a .ext{display:inline-block;font-size:12px;margin-left:4px;color:var(--sage);transition:transform .2s}
+.tl .what b a:hover .ext{transform:translate(2px,-2px)}
+
+/* calendar line fills as you scroll */
+.tl::after{content:"";position:absolute;left:8px;top:6px;width:1px;height:var(--fill,0%);background:var(--forest);transition:height .2s linear}
+
+/* corridor */
+.corridor{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:14px;overflow:hidden}
+.corridor svg{width:100%;height:auto;display:block}
+.corridor .route{fill:none;stroke:var(--sage);stroke-width:1.2;stroke-dasharray:1200;stroke-dashoffset:1200;transition:stroke-dashoffset 2.4s ease}
+.corridor.in .route{stroke-dashoffset:0}
+.corridor .coast{fill:none;stroke:var(--line);stroke-width:1}
+.corridor .stop circle{fill:var(--forest);transition:r .3s}
+.corridor .stop:hover circle{r:8}
+.corridor .stop.home circle{stroke:var(--forest);stroke-width:6;stroke-opacity:.18}
+.corridor text{font-family:var(--body);font-size:12px;font-weight:600;fill:var(--ink)}
+.corridor text.sub{font-weight:400;fill:var(--muted);font-size:10.5px}
+.corridor text.big{font-family:var(--display);font-weight:400;font-size:15px}
+.cards{position:absolute;inset:0;pointer-events:none;z-index:1}
+.cards span{position:absolute;border-radius:14px;background:linear-gradient(140deg,var(--sage-soft),rgba(45,90,74,.22));filter:blur(10px);opacity:.5;animation:drift 12s ease-in-out infinite}
+.cards span:nth-child(1){width:150px;height:96px;left:18%;top:8%;animation-delay:-3s}
+.cards span:nth-child(2){width:110px;height:140px;left:52%;top:22%;animation-delay:-7s;opacity:.35}
+.cards span:nth-child(3){width:170px;height:110px;left:78%;top:6%;animation-delay:-10s;opacity:.4}
+.cards span:nth-child(4){width:90px;height:90px;left:36%;top:48%;animation-delay:-5s;opacity:.3}
+@keyframes drift{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-12px) rotate(-1.5deg)}}
+
+/* sections */
+section{padding-block:clamp(52px,7vw,96px)}
+section.band{background:var(--bg-2)}
+.section-head{display:grid;gap:12px;margin-bottom:clamp(24px,3.5vw,40px)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);align-items:start}
+@media (max-width:820px){.split{grid-template-columns:1fr}}
+
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.fact{background:var(--card);padding:20px;min-width:0}
+.fact b{display:block;font-family:var(--display);font-weight:300;font-size:34px;color:var(--ink);line-height:1;margin-bottom:8px;font-variant-numeric:tabular-nums}
+.fact span{font-size:13.5px;color:var(--muted)}
+
+/* phases */
+.phases{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+.phases::before{content:"";position:absolute;left:0;right:0;top:9px;height:1px;background:var(--line)}
+.phase{position:relative;padding-top:26px;min-width:0}
+.phase::before{content:"";position:absolute;left:0;top:4px;width:11px;height:11px;border-radius:50%;background:var(--forest)}
+.phase .eyebrow{display:block;margin-bottom:6px}
+.phase h3{margin-bottom:10px}
+.phase ul{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:14.5px}
+.phase li{padding-left:16px;position:relative}
+.phase li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--sage)}
+.phase .out{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:13.5px}
+.phase .out b{color:var(--ink);font-weight:600}
+@media (max-width:820px){.phases{grid-template-columns:1fr;gap:30px}.phases::before{left:5px;right:auto;top:0;bottom:0;width:1px;height:auto}.phase{padding-top:0;padding-left:26px}.phase::before{top:6px}}
+
+/* map */
+.map{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:14px;overflow:hidden}
+.map svg{width:100%;height:auto;display:block}
+.map .lake{fill:var(--water)}
+.map .land{fill:none}
+.map .node circle.dot{fill:var(--forest);r:5;transition:r .4s}
+.map .node circle.ring{fill:none;stroke:var(--forest);stroke-width:1;opacity:0;r:5}
+.map .node.on circle.ring{animation:ring 2.4s ease-out infinite}
+@keyframes ring{0%{r:5;opacity:.8}100%{r:22;opacity:0}}
+.map .node text{font-family:var(--body);font-size:11.5px;font-weight:600;fill:var(--ink)}
+.map .node text.sub{font-weight:400;fill:var(--muted);font-size:10.5px}
+.map .label{font-family:var(--display);font-size:13px;fill:var(--muted);font-style:italic}
+.legend{display:grid;gap:12px}
+.legend .row{display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.legend .row:last-child{border-bottom:0}
+.legend .n{width:22px;height:22px;border-radius:50%;background:var(--sage-soft);color:var(--forest);display:grid;place-items:center;font-size:11px;font-weight:600;margin-top:2px}
+.legend b{color:var(--ink);font-weight:600;display:block}
+.legend span{font-size:14px;color:var(--muted)}
+
+/* tables */
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tbl th{text-align:left;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:0 12px 10px 0;border-bottom:1px solid var(--line)}
+.tbl td{padding:12px 12px 12px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl td b{color:var(--ink);font-weight:600}
+.tbl td.firm{white-space:nowrap}
+.tblwrap{overflow-x:auto}
+@media (max-width:640px){.tbl{min-width:560px}}
+
+/* timeline */
+.tl{position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:1px;background:var(--line)}
+.tl .ev{position:relative;padding:0 0 22px 0;display:grid;grid-template-columns:130px 1fr;gap:14px}
+.tl .ev::before{content:"";position:absolute;left:-22px;top:6px;width:9px;height:9px;border-radius:50%;background:var(--line);transition:background .4s,box-shadow .4s}
+.tl .ev.in::before{background:var(--forest);box-shadow:0 0 0 4px var(--sage-soft)}
+.tl .when{font-family:var(--display);font-size:18px;color:var(--ink);line-height:1.2}
+.tl .what b{color:var(--ink);font-weight:600}
+.tl .what{font-size:14.5px}
+.tag{display:inline-block;border-radius:999px;padding:2px 9px;font-size:11.5px;font-weight:600;letter-spacing:.04em;margin-left:6px;vertical-align:middle}
+.tag.speak{background:var(--forest);color:var(--bg)}
+.tag.demo{background:var(--sage-soft);color:var(--forest)}
+.tag.host{border:1px solid var(--sage);color:var(--forest)}
+.tag.peter{background:var(--ink);color:var(--bg)}
+.tag.due{border:1px solid var(--line);color:var(--muted)}
+@media (max-width:560px){.tl .ev{grid-template-columns:1fr;gap:4px}}
+
+/* referral */
+.refer{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.refer div{background:var(--card);padding:26px;min-width:0}
+.refer .big{font-family:var(--display);font-size:clamp(26px,3.4vw,36px);color:var(--ink);line-height:1.15;margin-bottom:10px}
+.refer p{font-size:14.5px;color:var(--muted)}
+.refer ul{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:8px;font-size:14.5px}
+.refer li{padding-left:16px;position:relative}
+.refer li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--sage)}
+@media (max-width:720px){.refer{grid-template-columns:1fr}}
+
+/* funnel */
+.funnel{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:clamp(16px,3vw,28px)}
+.funnel svg{width:100%;height:auto;display:block}
+.funnel .stage{fill:var(--forest);opacity:.12;transition:opacity .6s ease}
+.funnel.in .stage{opacity:.95}
+.funnel.in .stage:nth-child(2){transition-delay:.15s}.funnel.in .stage:nth-child(3){transition-delay:.3s}.funnel.in .stage:nth-child(4){transition-delay:.45s}.funnel.in .stage:nth-child(5){transition-delay:.6s}
+.funnel text{font-family:var(--body);font-size:14px;font-weight:600;fill:var(--bg)}
+.funnel.in text{fill:#f2efea}
+.stages{display:grid;gap:10px;list-style:none;margin:0;padding:0;font-size:14.5px}
+.stages li b{color:var(--ink);font-weight:600}
+.stages li{padding-left:16px;position:relative}
+.stages li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--sage)}
+
+/* launch tiles */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.tile{border:1px solid var(--line);border-radius:18px;padding:20px;background:var(--card);font-size:14.5px}
+.tile b{display:block;font-family:var(--display);font-weight:400;font-size:21px;color:var(--ink);margin-bottom:8px}
+.nope .tile b{text-decoration:line-through;text-decoration-color:var(--sage);text-decoration-thickness:1px}
+
+/* jobs */
+.jobs{display:grid;gap:14px}
+.job{border:1px solid var(--line);border-radius:18px;padding:20px;background:var(--card);display:grid;grid-template-columns:190px 1fr;gap:18px}
+@media (max-width:720px){.job{grid-template-columns:1fr}}
+.job .who b{display:block;font-family:var(--display);font-weight:400;font-size:22px;color:var(--ink);line-height:1.15}
+.job .who span{display:block;font-size:12.5px;color:var(--muted);margin-top:5px}
+.job ul{margin:0;padding:0;list-style:none;display:grid;gap:7px;font-size:14.5px}
+.job li strong{color:var(--ink);font-weight:600}
+.job li{padding-left:16px;position:relative}
+.job li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--sage)}
+
+/* more + closer */
+.more{border:1px solid var(--line);border-radius:22px;padding:clamp(22px,4vw,36px);background:var(--card);display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+@media (max-width:720px){.more{grid-template-columns:1fr}}
+.closer{text-align:center;padding-block:clamp(64px,10vw,130px)}
+.closer h2{font-size:clamp(36px,7vw,78px)}
+.closer h2 .line2{display:block;animation:rise 1.2s .25s both}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.closer .lead{margin:20px auto 0;max-width:520px}
+.contact{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px}
+.email{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:999px;padding:11px 16px;font-size:15px;background:var(--card)}
+.email button{border:0;background:var(--sage-soft);color:var(--forest);border-radius:999px;padding:5px 10px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+/* before friday */
+.friday{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.friday a{display:grid;gap:8px;text-decoration:none;border:1px solid var(--line);border-radius:18px;padding:18px;background:var(--card);transition:border-color .2s,transform .2s}
+.friday a:hover{border-color:var(--sage);transform:translateY(-1px)}
+.friday b{font-family:var(--display);font-weight:400;font-size:20px;color:var(--ink);line-height:1.2}
+.friday span{font-size:13.5px;color:var(--muted)}
+.friday .go{font-size:13px;font-weight:600;color:var(--forest)}
+@media (max-width:720px){.friday{grid-template-columns:1fr}}
+
+/* "Before Friday": an amber live indicator that pulses softly */
+.eyebrow.live{display:inline-flex;align-items:center;gap:10px;color:var(--amber);font-size:13px;animation:breathe 2.4s ease-in-out infinite}
+.eyebrow.live i{width:8px;height:8px;border-radius:50%;background:var(--amber);position:relative;flex:none}
+.eyebrow.live i::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1.5px solid var(--amber);animation:pulse 1.8s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.5);opacity:.9}100%{transform:scale(1.9);opacity:0}}
+@keyframes breathe{0%,100%{opacity:1}50%{opacity:.55}}
+
+/* saved for the conversation */
+.saved{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media (max-width:900px){.saved{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.saved{grid-template-columns:1fr}}
+.saved div{border:1px dashed var(--line);border-radius:18px;padding:18px;display:grid;gap:8px;align-content:start;background:transparent;transition:border-color .25s,transform .25s}
+.saved div:hover{border-color:var(--amber);transform:translateY(-2px)}
+.saved b{font-family:var(--display);font-weight:400;font-size:20px;color:var(--ink);line-height:1.2}
+.saved span{font-size:14px;color:var(--muted)}
+.saved .pill-amber{justify-self:start;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--amber);background:var(--amber-soft);border-radius:999px;padding:3px 9px}
+.saved-cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:22px;padding:20px 22px;border-radius:18px;background:var(--card);border:1px solid var(--line)}
+.saved-cta p{font-family:var(--display);font-size:clamp(20px,2.4vw,26px);color:var(--ink)}
+
+/* counters */
+.counts{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.counts div{background:var(--card);padding:18px;min-width:0}
+.counts b{display:block;font-family:var(--display);font-weight:300;font-size:40px;color:var(--ink);line-height:1;margin-bottom:6px;font-variant-numeric:tabular-nums}
+.counts span{font-size:13px;color:var(--muted)}
+.bars{display:grid;gap:8px;margin-top:18px}
+.bar{display:grid;grid-template-columns:150px 1fr 44px;gap:10px;align-items:center;font-size:13.5px}
+.bar i{display:block;height:8px;border-radius:999px;background:var(--sage-soft);overflow:hidden}
+.bar i::after{content:"";display:block;height:100%;width:0;background:var(--forest);transition:width 1.2s ease}
+.in .bar i::after{width:var(--w)}
+.bar em{font-style:normal;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+@media (max-width:560px){.bar{grid-template-columns:110px 1fr 40px}}
+
+/* posts */
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:820px){.posts{grid-template-columns:1fr}}
+.post{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:20px;font-size:14.5px;min-width:0;display:grid;gap:10px;align-content:start}
+.post .eyebrow{font-size:11px}
+.post .t{font-family:var(--display);font-size:19px;color:var(--ink);line-height:1.25}
+.post p{color:var(--fg)}
+.post .thread p{padding-left:14px;border-left:1px solid var(--line)}
+
+/* faq */
+.faq{display:grid;gap:10px}
+.faq details{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:0 18px}
+.faq summary{cursor:pointer;list-style:none;padding:16px 0;font-family:var(--display);font-size:19px;color:var(--ink);display:flex;justify-content:space-between;gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--body);color:var(--sage);font-size:20px;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 0 16px;font-size:14.5px;color:var(--fg)}
+.faq .a small{display:block;margin-top:6px;color:var(--muted);font-size:12.5px}
+
+/* risks */
+.risks{display:grid;gap:0;border-top:1px solid var(--line)}
+.risk{display:grid;grid-template-columns:1fr 1.3fr;gap:18px;padding:16px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.risk b{font-family:var(--display);font-weight:400;font-size:19px;color:var(--ink);line-height:1.25}
+.risk span{display:block;color:var(--muted);font-size:13px;margin-top:4px}
+@media (max-width:720px){.risk{grid-template-columns:1fr;gap:6px}}
+
+/* budget */
+.tbl td.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tbl th.num{text-align:right}
+.tbl tr.total td{border-bottom:0;color:var(--ink);font-weight:600}
+.est{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:1px 7px;margin-left:6px;vertical-align:middle}
+
+/* asks + week */
+.asks{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.ask{border:1px dashed var(--line);border-radius:16px;padding:16px;font-size:14.5px}
+.ask b{display:block;color:var(--ink);font-weight:600;margin-bottom:4px}
+.week{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.week div{background:var(--card);padding:16px;min-width:0;font-size:13.5px}
+.week b{display:block;font-family:var(--display);font-weight:400;font-size:19px;color:var(--ink);margin-bottom:6px}
+@media (max-width:820px){.week{grid-template-columns:1fr}}
+.callback{font-family:var(--display);font-style:italic;font-size:clamp(20px,2.6vw,26px);color:var(--ink);max-width:640px;line-height:1.3}
+
+footer{padding-block:26px 40px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between}
+
+
+/* Underdog additions */
+h1,h2,h3{font-weight:400;letter-spacing:-.005em}
+h1 em{font-style:italic;background:var(--rb);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.06em}
+.eyebrow{color:var(--forest)}
+.progress i{background:var(--rb)}
+.pack{position:relative;margin-top:clamp(20px,4vw,40px);margin-bottom:12px;height:clamp(240px,32vw,360px);border:1px solid var(--line);border-radius:22px;background:var(--card);overflow:hidden}
+.pack canvas{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:pointer}
+.packbar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 18px;font-size:12.5px;color:var(--muted);margin-bottom:34px}
+.packbar .keys{display:flex;flex-wrap:wrap;gap:14px}
+.packbar i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.packbar .hint b{color:var(--forest);font-weight:600}
+#packstat{font-variant-numeric:tabular-nums}
+.eng3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.eng{border:1px solid var(--line);border-radius:18px;padding:22px;background:var(--card);display:grid;gap:10px;align-content:start;min-width:0;transition:transform .25s,border-color .25s}
+.eng:hover{transform:translateY(-2px);border-color:var(--forest)}
+.eng ul{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:14.5px}
+.eng li{padding-left:16px;position:relative}
+.eng li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--forest)}
+.eng .out{margin-top:6px;padding-top:12px;border-top:1px solid var(--line);font-size:13.5px}
+.eng .out b{color:var(--ink)}
+.eng .muted{font-size:14.5px}
+@media (max-width:860px){.eng3{grid-template-columns:1fr}}
+.legend-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.legend-tags .tag{margin-left:0}
+.tag.me{background:var(--amber-soft);color:var(--amber)}
+.tag.speak{background:var(--forest);color:var(--bg)}
+.tag.demo{background:var(--sage-soft);color:var(--forest)}
+.tag.host{border:1px solid var(--forest);color:var(--forest)}
+.map .node circle.dot{fill:var(--forest)}
+.map .node circle.ring{stroke:var(--forest)}
+.map .node.law circle.dot{fill:var(--ink)}
+.map .node.room circle.dot{fill:var(--amber)}
+.mapkey{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--muted);margin-top:10px}
+.mapkey i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.quote{font-family:var(--display);font-size:clamp(22px,2.8vw,30px);line-height:1.25;color:var(--ink);max-width:760px}
+.quote small{display:block;font-family:var(--body);font-size:13px;color:var(--muted);margin-top:8px}
+/* ---- v2 components ---- */
+.lead.short{max-width:620px}
+.section-head .lead{max-width:640px}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:4px 11px;font-size:12.5px;font-weight:500;color:var(--fg);background:var(--card)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+button{font-family:inherit}
+.btnrow{display:flex;flex-wrap:wrap;gap:8px}
+.pill-btn{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:8px 14px;font-size:13.5px;font-weight:600;cursor:pointer;display:inline-flex;gap:8px;align-items:center;transition:background .2s,border-color .2s,color .2s}
+.pill-btn:hover{border-color:var(--forest)}
+.pill-btn[aria-pressed="true"],.pill-btn[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.pill-btn .arrow{font-size:12px}
+.panel{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:22px;min-width:0}
+.panel h3{margin-bottom:8px}
+.panel p{font-size:15px}
+.panel ul{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:8px;font-size:14.5px}
+.panel li{padding-left:16px;position:relative}
+.panel li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--forest)}
+.panel .meta{font-size:12.5px;color:var(--muted);margin-top:12px}
+.fade-swap{animation:swap .35s ease}
+@keyframes swap{from{opacity:.2;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* ship ticker */
+.ticker{overflow:hidden;border-block:1px solid var(--line);padding-block:12px;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.ticker .row{display:flex;gap:34px;width:max-content;animation:tick 48s linear infinite}
+.ticker:hover .row{animation-play-state:paused}
+.ticker span{white-space:nowrap;font-size:14px;color:var(--fg)}
+.ticker b{font-family:var(--display);font-weight:400;font-size:17px;color:var(--forest);margin-right:8px}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* loop */
+.loopgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(20px,4vw,48px);align-items:center}
+@media (max-width:860px){.loopgrid{grid-template-columns:1fr}}
+.loop svg{width:100%;height:auto;display:block;max-width:520px;margin:0 auto}
+.loop .ring{fill:none;stroke:var(--line);stroke-width:2}
+.loop .arc{fill:none;stroke:var(--forest);stroke-width:3;stroke-linecap:round}
+.loop .st circle{fill:var(--card);stroke:var(--ink);stroke-width:1.5;transition:fill .3s,stroke .3s}
+.loop .st.on circle{fill:var(--forest);stroke:var(--forest)}
+.loop .st text{font-family:var(--body);font-size:13px;font-weight:600;fill:var(--ink)}
+.loop .st text.n{font-size:12px;fill:var(--ink)}
+.loop .st.on text.n{fill:var(--bg)}
+.loop .ctr{font-family:var(--display);font-size:30px;fill:var(--ink)}
+.loop .ctr2{font-family:var(--body);font-size:12px;fill:var(--muted)}
+.loop .runner{fill:var(--amber)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+
+/* community orbit */
+.orbit svg{width:100%;height:auto;display:block;max-width:520px;margin:0 auto;overflow:visible}
+.orbit .o1,.orbit .o2,.orbit .o3{fill:none;stroke:var(--line);stroke-dasharray:3 6}
+.orbit .rl{font-family:var(--body);font-size:11px;letter-spacing:.12em;text-transform:uppercase;fill:var(--muted);font-weight:600}
+.orbit .core{fill:var(--ink)}
+.orbit .coret{font-family:var(--display);font-size:22px;fill:var(--bg)}
+.orbit .g{cursor:pointer}
+.orbit .g circle{fill:var(--card);stroke:var(--forest);stroke-width:1.5;transition:fill .25s}
+.orbit .g.on circle,.orbit .g:hover circle{fill:var(--forest)}
+.orbit .g text{font-family:var(--body);font-size:12.5px;font-weight:600;fill:var(--ink);pointer-events:none}
+.orbit .g:focus{outline:none}
+.orbit .g:focus-visible circle{stroke-width:4}
+.rituals{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}
+.rituals div{border:1px dashed var(--line);border-radius:16px;padding:14px;font-size:14px}
+.rituals b{display:block;font-family:var(--display);font-weight:400;font-size:19px;color:var(--ink);margin-bottom:4px}
+@media (max-width:860px){.rituals{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.rituals{grid-template-columns:1fr}}
+
+/* cloud vs local */
+.cloudviz{border:1px solid var(--line);border-radius:22px;background:var(--card);padding:clamp(14px,3vw,24px)}
+.cloudviz svg{width:100%;height:auto;display:block}
+.cloudviz .box{fill:var(--bg);stroke:var(--ink);stroke-width:1.5}
+.cloudviz .srv{fill:var(--bg);stroke:var(--muted);stroke-width:1.5;transition:opacity .4s}
+.cloudviz .lbl{font-family:var(--body);font-size:12.5px;font-weight:600;fill:var(--ink)}
+.cloudviz .sub{font-family:var(--body);font-size:11px;fill:var(--muted)}
+.cloudviz .item{fill:var(--sage-soft);stroke:var(--forest);stroke-width:1}
+.cloudviz .chipm{fill:var(--forest)}
+.cloudviz .chipt{font-family:var(--body);font-size:11px;font-weight:600;fill:var(--bg)}
+.cloudviz .path{fill:none;stroke:var(--line);stroke-width:1.5;stroke-dasharray:4 5;transition:opacity .4s}
+.cloudviz .pk{transition:opacity .3s}
+.cloudviz .bad{fill:var(--red)}
+.cloudviz .good{fill:var(--forest)}
+.cloudviz .ok{fill:var(--amber)}
+.ctrls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:14px}
+.switch{display:inline-flex;align-items:center;gap:10px;font-size:13.5px;font-weight:600;cursor:pointer;border:0;background:none;color:var(--fg);padding:6px 4px}
+.switch i{width:38px;height:22px;border-radius:999px;background:var(--line);position:relative;transition:background .25s}
+.switch i::after{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--bg);transition:transform .25s}
+.switch[aria-checked="true"] i{background:var(--forest)}
+.switch[aria-checked="true"] i::after{transform:translateX(16px)}
+.switch[disabled]{opacity:.4;cursor:not-allowed}
+.cap{font-size:14.5px;margin-top:12px;min-height:44px}
+.cap b{color:var(--ink)}
+
+/* timeline lanes */
+.stripwrap{overflow-x:auto;border:1px solid var(--line);border-radius:22px;background:var(--card);padding:16px 14px 10px}
+.strip{min-width:760px;position:relative}
+.strip svg{width:100%;height:auto;display:block}
+.strip .lane{stroke:var(--line);stroke-width:1}
+.strip .lanelbl{font-family:var(--body);font-size:11px;font-weight:600;fill:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.strip .mo{font-family:var(--body);font-size:11px;fill:var(--muted)}
+.strip .mol{stroke:var(--line);stroke-dasharray:2 4}
+.strip .today{stroke:var(--amber);stroke-width:1.5}
+.strip .todayt{font-family:var(--body);font-size:10.5px;font-weight:600;fill:var(--amber)}
+.strip .ev{cursor:pointer}
+.strip .ev circle{stroke:var(--card);stroke-width:2;transition:r .2s}
+.strip .ev.on circle{stroke:var(--ink);stroke-width:2.5}
+.strip .ev:hover circle{r:10}
+.strip .ev rect{opacity:.35}
+.strip .k-speak{fill:var(--forest)}
+.strip .k-demo{fill:var(--sage)}
+.strip .k-host{fill:var(--ink)}
+.strip .k-me{fill:var(--amber)}
+.strip .k-due{fill:var(--red)}
+.evgrid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px;margin-top:16px}
+@media (max-width:860px){.evgrid{grid-template-columns:1fr}}
+.evcard .when{font-family:var(--display);font-size:22px;color:var(--ink)}
+.evcard h3 a{text-decoration:none;border-bottom:1px solid var(--line)}
+.evcard h3 a:hover{border-color:var(--forest)}
+.evnav{display:flex;gap:8px;margin-top:14px}
+.dotkey{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--muted);margin-top:10px}
+.dotkey i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:middle}
+
+/* waves */
+.waves svg{width:100%;height:auto;display:block}
+.waves .bar{fill:var(--forest);transform-box:fill-box;transform-origin:bottom;transform:scaleY(.06);transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.waves.in .bar{transform:scaleY(1)}
+.waves.in .bar:nth-of-type(2){transition-delay:.15s}.waves.in .bar:nth-of-type(3){transition-delay:.3s}.waves.in .bar:nth-of-type(4){transition-delay:.45s}.waves.in .bar:nth-of-type(5){transition-delay:.6s}
+.waves .bar.hi{fill:var(--amber)}
+.waves text{font-family:var(--body);font-size:12px;fill:var(--ink);font-weight:600}
+.waves text.s{font-weight:400;fill:var(--muted);font-size:11px}
+.waves .base{stroke:var(--line)}
+
+/* creators */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:860px){.tiers{grid-template-columns:1fr}}
+.tier{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:20px;display:grid;gap:10px;align-content:start;min-width:0}
+.avs{display:flex;flex-wrap:wrap;gap:6px;min-height:44px}
+.av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:12.5px;font-weight:700;color:#fff;animation:bob 4s ease-in-out infinite}
+.av:nth-child(2n){animation-delay:-1.3s}.av:nth-child(3n){animation-delay:-2.6s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.av.g{background:var(--line);color:var(--muted)}
+.tier .ask{border:0;padding:0;font-size:14px;color:var(--muted)}
+.tier .ask b{color:var(--ink);display:inline;margin:0}
+
+/* mix bars */
+.mix{display:grid;gap:12px}
+.mixrow{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:center;font-size:13.5px}
+.mixbar{display:flex;height:30px;border-radius:10px;overflow:hidden;background:var(--line)}
+.mixbar span{display:grid;place-items:center;font-size:11.5px;font-weight:600;color:#fff;width:0;transition:width 1.1s cubic-bezier(.2,.8,.2,1);white-space:nowrap;overflow:hidden}
+.in .mixbar span{width:var(--w)}
+.mixbar .c{background:var(--forest)}.mixbar .p{background:var(--sage)}.mixbar .a{background:var(--amber)}
+.paidlist{display:grid;gap:10px}
+.paidlist div{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;font-size:14.5px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.paidlist div:last-child{border-bottom:0}
+.paidlist b{color:var(--ink)}
+.paidlist .ic{width:30px;height:30px;border-radius:9px;background:var(--amber-soft);color:var(--amber);display:grid;place-items:center;font-weight:700;font-size:13px}
+
+/* friday note */
+.note{border:1px solid var(--line);border-radius:18px;background:var(--bg);box-shadow:0 18px 50px rgba(20,19,23,.08);padding:22px;max-width:520px;justify-self:center;width:100%}
+.note .hd{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:12px}
+.note .hd b{font-family:var(--display);font-weight:400;font-size:22px;color:var(--ink)}
+.note .hd span{font-size:12px;color:var(--muted)}
+.note .ln{display:grid;grid-template-columns:150px 1fr;gap:12px;align-items:center;padding:8px 0;font-size:13.5px;font-weight:600;color:var(--ink)}
+.note .sh{height:9px;border-radius:999px;background:linear-gradient(90deg,var(--line) 0%,var(--sage-soft) 40%,var(--line) 80%);background-size:200% 100%;animation:shimmer 2.2s linear infinite}
+@keyframes shimmer{to{background-position:-200% 0}}
+.note .ft{font-size:12px;color:var(--muted);margin-top:10px}
+@media (max-width:480px){.note .ln{grid-template-columns:1fr;gap:6px}}
+
+/* firms */
+.firms{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.firm{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:16px;display:grid;gap:8px;align-content:start;transition:transform .25s,border-color .25s}
+.firm:hover{transform:translateY(-2px);border-color:var(--forest)}
+.firm b{font-family:var(--display);font-weight:400;font-size:20px;color:var(--ink);line-height:1.15}
+.firm .w{font-size:12.5px;color:var(--muted)}
+.firm p{font-size:14px}
+.stance{justify-self:start;font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;border-radius:999px;padding:3px 9px}
+.stance.ban{background:var(--sage-soft);color:var(--forest)}
+.stance.cloud{background:var(--amber-soft);color:var(--amber)}
+.stance.quiet{background:var(--line);color:var(--muted)}
+.mappanel{margin-top:14px}
+.map .node{cursor:pointer}
+
+/* budget bars */
+.bud{display:grid;gap:10px}
+.bud .r{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,2fr) 104px;gap:12px;align-items:center;font-size:14px}
+.bud .r .t b{color:var(--ink);font-weight:600}
+.bud .r .t small{display:block;color:var(--muted);font-size:12px}
+.bud .trk{height:12px;border-radius:999px;background:var(--line);overflow:hidden;position:relative}
+.bud .trk i,.bud .trk em{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:999px;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.bud .trk i{background:var(--forest)}
+.bud .trk em{background:var(--sage-soft);border:1px dashed var(--forest)}
+.bud .trk.est i{background:var(--sage)}
+.in .bud .trk i{width:var(--a)}
+.in .bud .trk em{width:var(--b)}
+.bud .v{text-align:right;font-variant-numeric:tabular-nums;font-weight:600;color:var(--ink)}
+.bud .tot{border-top:1px solid var(--line);padding-top:12px;margin-top:4px}
+.bud .tot .v{font-size:17px}
+@media (max-width:640px){.bud .r{grid-template-columns:1fr 96px}.bud .trk{grid-column:1 / -1;grid-row:2}}
+.budkey{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--muted);margin-top:12px}
+.budkey i{display:inline-block;width:18px;height:8px;border-radius:999px;margin-right:6px;vertical-align:middle}
+
+.map .node.sel circle.dot{r:8}
+.map .node.sel text{fill:var(--forest)}
+.ext{font-size:12px;color:var(--forest)}
+
+section,.hero{overflow-x:clip}
+body{overflow-x:clip}
+</style>
+
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top">Charls Pasion <small>for Underdog</small></a>
+    <nav>
+      <a class="navlink" href="#plan">90 days</a>
+      <a class="navlink" href="#community">Community</a>
+      <a class="navlink" href="#work">Work</a>
+      <a class="navlink" href="#cities">Cities</a>
+      <a class="navlink" href="#calendar">Stages</a>
+      <a class="navlink" href="#launch">Launch</a>
+      <a class="navlink" href="#me">Why me</a>
+      <button class="toggle" id="themeToggle" type="button" aria-label="Switch theme"><span id="themeIcon">◐</span><span id="themeLabel">Dark</span></button>
+    </nav>
+  </div>
+  <div class="progress" aria-hidden="true"><i id="progress"></i></div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="glows" aria-hidden="true"><i class="t"></i><i class="a"></i></div>
+  <div class="wrap">
+    <div class="copy">
+      <p class="eyebrow">Growth plan · Member of Technical Staff, Growth · Seattle and San Francisco</p>
+      <h1>Tell a <em>friend.</em></h1>
+      <p class="lead">Underdog's pricing page says the only way to pay for him is to tell a friend. This plan makes that the growth engine, and builds everything else around it.</p>
+      <div class="cta-row">
+        <a class="btn" href="#plan">Read the plan <span class="arrow down">↓</span></a>
+        <a class="btn ghost" href="#calendar">Where Sigil speaks <span class="arrow">→</span></a>
+      </div>
+    </div>
+    <div class="pack" id="pack"><canvas id="packcv" aria-label="Illustration: an invite tree growing from one member"></canvas></div>
+    <div class="packbar">
+      <span class="keys"><span><i style="background:var(--forest)"></i>just invited</span><span><i style="background:var(--ink)"></i>member</span><span><i style="background:var(--amber)"></i>bought something with Link</span></span>
+      <span class="hint"><b>Click</b> to send an invite · <b>Hover</b> to trace one home · <span id="packstat"></span> · illustration</span>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap rv">
+    <div class="glance">
+      <div><b data-count="90">90</b><span>days to a playbook the next hire can run</span></div>
+      <div><b data-count="5">5</b><span>communities to build: founders, owners, freelancers, pros, builders</span></div>
+      <div><b data-count="17">17</b><span>dated stages for Sigil, Oct to Jul</span></div>
+      <div><b data-count="2">2</b><span>cities: Seattle base, SF one week a month</span></div>
+      <div><b>$16 to 21K</b><span>all in for 90 days, salaries excluded</span></div>
+    </div>
+    <div class="section-head narrow" style="margin-bottom:18px">
+      <p class="eyebrow live"><i aria-hidden="true"></i>Before Nov 3</p>
+      <h2 style="font-size:clamp(26px,3.4vw,36px)">Three things worth doing now, hired or not.</h2>
+    </div>
+    <div class="friday">
+      <a href="https://stripesessions.com/"><b>Submit Sigil to Stripe Sessions</b><span>Proposals close Nov 3. Underdog is live agentic commerce on Link, and Patrick Collison is an angel. The talk is drafted below.</span><span class="go">Open the call <span class="arrow">→</span></span></a>
+      <a href="https://www.geekwire.com/calendar/tag/seattle-ai-week/2026-10/"><b>Show up at Seattle AI Week</b><span>Oct 25 to 30. Agentic AI Day on Oct 28 has a Stripe keynote. Founders Live on Oct 29 is a free 99-second demo.</span><span class="go">See the schedule <span class="arrow">→</span></span></a>
+      <a href="https://seattle.aitinkerers.org/"><b>Book an AI Tinkerers demo</b><span>Nov 3, Dev Tools night, 102 attending. Real systems, not decks. Saluki 27B on a 16 GB laptop is the demo.</span><span class="go">Ask for a slot <span class="arrow">→</span></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="padding-block:clamp(40px,5vw,64px)">
+  <div class="wrap rv">
+    <div class="section-head narrow">
+      <p class="eyebrow">Where Underdog stands</p>
+      <h2>Loved by the right people. Unknown to everyone else.</h2>
+    </div>
+  </div>
+  <div class="ticker rv" aria-label="What Underdog shipped, Oct 7 to 16">
+    <div class="row">
+      <span><b>Oct 7</b>Saluki 27B, 7.89 GB</span><span><b>Oct 9</b>Meeting Notes, one-click Granola import</span><span><b>Oct 10</b>Invite someone from the sidebar</span><span><b>Oct 10</b>Images and Recordings</span><span><b>Oct 11</b>Videos, fully local</span><span><b>Oct 13</b>Buy with Link</span><span><b>Oct 13</b>Health beta</span><span><b>Oct 15</b>Windows beta</span><span><b>Oct 16</b>NVIDIA RTX Spark launch partner</span>
+      <span aria-hidden="true"><b>Oct 7</b>Saluki 27B, 7.89 GB</span><span aria-hidden="true"><b>Oct 9</b>Meeting Notes, one-click Granola import</span><span aria-hidden="true"><b>Oct 10</b>Invite someone from the sidebar</span><span aria-hidden="true"><b>Oct 10</b>Images and Recordings</span><span aria-hidden="true"><b>Oct 11</b>Videos, fully local</span><span aria-hidden="true"><b>Oct 13</b>Buy with Link</span><span aria-hidden="true"><b>Oct 13</b>Health beta</span><span aria-hidden="true"><b>Oct 15</b>Windows beta</span><span aria-hidden="true"><b>Oct 16</b>NVIDIA RTX Spark launch partner</span>
+    </div>
+  </div>
+  <div class="wrap rv" style="margin-top:28px">
+    <div class="facts">
+      <div class="fact"><b>$0</b><span>Forever, never ad-supported. Revenue is a small cut of what members buy</span></div>
+      <div class="fact"><b>20 / 20</b><span>CASA requirements passed. Google approved for Gmail and Calendar</span></div>
+      <div class="fact"><b>33.7</b><span>Underdog 27B on the AA index, vs 31.9 for Claude Opus 4.6 Max</span></div>
+      <div class="fact"><b>163 MB</b><span>Bark 3.0 speech model, beats Whisper large-v3</span></div>
+    </div>
+    <p class="quote" style="margin-top:30px">"Underdog has a 10/10 consumer onboarding experience."<small>Varun Srinivasan, on the Wall of Love. People who try it stay. The job is getting more people to try it.</small></p>
+    <p class="src" style="margin-top:12px">From <a href="https://underdog.ai/ship">ships</a>, <a href="https://underdog.ai/security">security</a>, <a href="https://underdog.ai/pricing">pricing</a> and the <a href="https://underdog.ai/love">Wall of Love</a>.</p>
+  </div>
+</section>
+
+<section id="plan">
+  <div class="wrap rv">
+    <div class="section-head narrow">
+      <p class="eyebrow">The first 90 days</p>
+      <h2>Find the pack. Bring him to work. Open the gates.</h2>
+    </div>
+    <div class="phases">
+      <div class="phase">
+        <span class="eyebrow">Days 1 to 30</span>
+        <h3>Find the pack.</h3>
+        <ul>
+          <li>Seattle AI Week. Stripe proposal by Nov 3, SXSW Pitch by Nov 11.</li>
+          <li>Talk to the 20 most active members. Start the Pack Leaders group.</li>
+          <li>Tag every invite. First SF week: Code Summit, Nov 10 to 12.</li>
+        </ul>
+        <p class="out"><b>Output:</b> a weekly report on which invites, posts and rooms make members who stay.</p>
+      </div>
+      <div class="phase">
+        <span class="eyebrow">Days 31 to 60</span>
+        <h3>Bring him to work.</h3>
+        <ul>
+          <li>The security kit and the forward-to-IT note.</li>
+          <li>First Naval mode night. Ten Seattle firm champions.</li>
+          <li>Small paid tests: one podcast, one newsletter, Reddit and X.</li>
+        </ul>
+        <p class="out"><b>Output:</b> firms with three or more members, and which paid channel earns a second dollar.</p>
+      </div>
+      <div class="phase">
+        <span class="eyebrow">Days 61 to 90</span>
+        <h3>Open the gates.</h3>
+        <ul>
+          <li>CES with NVIDIA, NRF for merchants.</li>
+          <li>The iPhone launch in waves, with the creator kit ready.</li>
+          <li>The playbook: each channel, what it cost, what stayed.</li>
+        </ul>
+        <p class="out"><b>Output:</b> a clean launch and a playbook the next hire can run on day one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="engines" class="band">
+  <div class="wrap">
+    <div class="section-head narrow rv">
+      <p class="eyebrow">The loop</p>
+      <h2>Every member is the next invite.</h2>
+      <p class="lead muted short">One loop, three ways in. Click a stage or an engine.</p>
+    </div>
+    <div class="loopgrid">
+      <div class="loop rv" id="loop">
+        <svg viewBox="-80 -6 600 456" role="img" aria-label="The invite loop: invited, installed, still here on day 7, ran a paid errand, invited someone">
+          <circle class="ring" cx="220" cy="220" r="150"/>
+          <path class="arc" id="looparc" d="" />
+          <g id="loopst"></g>
+          <circle class="runner" id="runner" r="7" cx="220" cy="70"/>
+          <text class="ctr" x="220" y="216" text-anchor="middle">The loop</text>
+          <text class="ctr2" x="220" y="240" text-anchor="middle" id="loopcap">tagged by source, every week</text>
+        </svg>
+      </div>
+      <div class="rv">
+        <div class="tabs" role="tablist" aria-label="Growth engines">
+          <button class="pill-btn" role="tab" aria-selected="true" data-eng="0">Marketing</button>
+          <button class="pill-btn" role="tab" aria-selected="false" data-eng="1">Enterprise</button>
+          <button class="pill-btn" role="tab" aria-selected="false" data-eng="2">Partnerships</button>
+        </div>
+        <div class="panel" id="engpanel" role="tabpanel"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="community">
+  <div class="glows" aria-hidden="true"><i class="s"></i></div>
+  <div class="wrap">
+    <div class="section-head narrow rv">
+      <p class="eyebrow">Community</p>
+      <h2>Build the pack where it already gathers.</h2>
+      <p class="lead muted short">Underdog already has the Dogpark. The job is filling it with five groups, each found where they already talk. Click a group.</p>
+    </div>
+    <div class="split">
+      <div class="orbit rv" id="orbit">
+        <svg viewBox="0 0 520 520" role="img" aria-label="Five communities orbiting Underdog, with channel rings for the Dogpark, Reddit and X, and in person">
+          <defs>
+            <path id="r1" d="M260 260 m-118 0 a118 118 0 1 1 236 0 a118 118 0 1 1 -236 0"/>
+            <path id="r2" d="M260 260 m-178 0 a178 178 0 1 1 356 0 a178 178 0 1 1 -356 0"/>
+            <path id="r3" d="M260 260 m-236 0 a236 236 0 1 1 472 0 a236 236 0 1 1 -472 0"/>
+          </defs>
+          <circle class="o1" cx="260" cy="260" r="118"/><circle class="o2" cx="260" cy="260" r="178"/><circle class="o3" cx="260" cy="260" r="236"/>
+          <text class="rl"><textPath href="#r1" startOffset="17%">Dogpark · Discord</textPath></text>
+          <text class="rl"><textPath href="#r2" startOffset="19%">Reddit · X</textPath></text>
+          <text class="rl"><textPath href="#r3" startOffset="16%">In person · Seattle and SF</textPath></text>
+          <circle class="core" cx="260" cy="260" r="52"/>
+          <text class="coret" x="260" y="267" text-anchor="middle">Underdog</text>
+          <g id="orbitg"></g>
+        </svg>
+      </div>
+      <div class="rv">
+        <div class="panel" id="companel"></div>
+      </div>
+    </div>
+    <div class="rituals rv">
+      <div><b>Good dog stories</b>One real member a week, in the dog's voice.</div>
+      <div><b>Office hours</b>Monthly with Sigil, in the Dogpark.</div>
+      <div><b>Pack Leaders</b>Power users get builds first and shape what ships.</div>
+      <div><b>The workflow library</b>"How I run my inbox with Underdog," by members.</div>
+    </div>
+    <p class="src" style="margin-top:14px">One rule everywhere: the team posts as itself and says who it is. No fake accounts, no stealth promotion. Reddit bans it, and loyal means loyal.</p>
+  </div>
+</section>
+
+<section id="work" class="band">
+  <div class="wrap">
+    <div class="section-head narrow rv">
+      <p class="eyebrow">Bring me to work</p>
+      <h2>One picture IT can say yes to.</h2>
+      <p class="lead muted short">Flip the switch. That's the whole enterprise pitch.</p>
+    </div>
+    <div class="cloudviz rv" id="cloudviz">
+      <div class="ctrls">
+        <div class="btnrow" role="group" aria-label="Compare">
+          <button class="pill-btn" type="button" id="mCloud" aria-pressed="false">Typical cloud AI</button>
+          <button class="pill-btn" type="button" id="mLocal" aria-pressed="true">Underdog</button>
+        </div>
+        <button class="switch" type="button" role="switch" id="naval" aria-checked="false"><i></i>Naval mode</button>
+      </div>
+      <svg viewBox="0 0 640 280" role="img" aria-label="Where data goes: a laptop, a cloud AI server, your mail provider and Underdog's account server">
+        <rect class="box" x="24" y="40" width="260" height="200" rx="18"/>
+        <text class="lbl" x="44" y="66">Your laptop</text>
+        <rect class="item" x="44" y="84" width="96" height="36" rx="10"/><text class="lbl" x="92" y="107" text-anchor="middle">Mail</text>
+        <rect class="item" x="44" y="132" width="96" height="36" rx="10"/><text class="lbl" x="92" y="155" text-anchor="middle">Notes</text>
+        <rect class="item" x="44" y="180" width="96" height="36" rx="10"/><text class="lbl" x="92" y="203" text-anchor="middle">Audio</text>
+        <rect class="chipm" x="178" y="118" width="86" height="56" rx="12"/><text class="chipt" x="221" y="142" text-anchor="middle">The model</text><text class="chipt" x="221" y="158" text-anchor="middle" id="modelname">on device</text>
+        <g id="srvCloud"><rect class="srv" x="430" y="24" width="190" height="76" rx="14"/><text class="lbl" x="525" y="56" text-anchor="middle">Cloud AI server</text><text class="sub" x="525" y="74" text-anchor="middle">reads, stores, may train</text></g>
+        <g><rect class="srv" x="430" y="122" width="190" height="56" rx="14"/><text class="lbl" x="525" y="146" text-anchor="middle">Google or Microsoft</text><text class="sub" x="525" y="163" text-anchor="middle">your mail provider</text></g>
+        <g id="srvAcct"><rect class="srv" x="430" y="200" width="190" height="56" rx="14"/><text class="lbl" x="525" y="224" text-anchor="middle">underdog.ai</text><text class="sub" x="525" y="241" text-anchor="middle">account email, usage counts</text></g>
+        <path class="path" id="pCloud" d="M284 100 C 350 60, 380 60, 430 62"/>
+        <path class="path" id="pMail" d="M284 150 C 350 150, 380 150, 430 150"/>
+        <path class="path" id="pAcct" d="M284 210 C 350 228, 380 228, 430 228"/>
+        <path class="path" id="pIn1" d="M140 102 C 160 102, 160 136, 178 136"/>
+        <path class="path" id="pIn2" d="M140 150 L 178 150"/>
+        <path class="path" id="pIn3" d="M140 198 C 160 198, 160 162, 178 162"/>
+        <g id="pk"></g>
+      </svg>
+      <p class="cap" id="cloudcap"></p>
+    </div>
+    <div class="split" style="margin-top:28px">
+      <div class="rv">
+        <div class="section-head">
+          <p class="eyebrow">The security kit</p>
+          <h3>The five questions IT asks, in the order they ask them.</h3>
+        </div>
+        <p class="muted">A member forwards it from the app. Every forward is tagged, so we see which firms are asking. From <a href="https://underdog.ai/security">underdog.ai/security</a>.</p>
+      </div>
+      <div class="faq rv">
+        <details open><summary>Where does our data go?</summary><div class="a">Nowhere new. Mail goes straight between the laptop and Google or Microsoft. The AI runs on the laptop. Audio is never uploaded.</div></details>
+        <details><summary>Who has tested it?</summary><div class="a">Leviathan Security Group: CASA Level 1, all 20 requirements, Sep 10, 2026. Google's restricted-scope review. A pen test and Jane Manchun Wong's teardown are under way.<small>Ask for the Leviathan letter of validation.</small></div></details>
+        <details><summary>How is it stored?</summary><div class="a">AES-256, with the key in the Apple Keychain on that device only.</div></details>
+        <details><summary>What does Underdog receive?</summary><div class="a">Account email, membership, days the app opened, usage counts the member can turn off. Never mail, notes or audio.</div></details>
+        <details><summary>Can we lock it down further?</summary><div class="a">Naval mode: one switch, and it talks only to the servers it needs. The browser agent asks before it buys, pays, sends or deletes.</div></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="seattle">
+  <div class="wrap">
+    <div class="section-head narrow rv">
+      <p class="eyebrow">Seattle, the base</p>
+      <h2>A city of people who can't use cloud AI at work.</h2>
+      <p class="lead muted short">213,010 tech workers, 41,591 in AI. A downtown law row. Hospitals whose doctors still do their own email. Click a neighborhood.</p>
+    </div>
+    <div class="split">
+      <div class="rv">
+        <div class="map" id="map">
+          <svg viewBox="0 0 560 440" role="img" aria-label="Stylized map of Seattle: law firms downtown, hospitals on First Hill, rooms to host in">
+            <path class="lake" d="M0 0 H120 Q100 90 130 160 Q95 230 125 300 Q90 370 120 440 H0 Z"/>
+            <path class="lake" d="M232 92 Q270 80 288 118 Q300 160 272 180 Q238 186 226 150 Q214 112 232 92 Z"/>
+            <path class="lake" d="M398 0 H428 Q444 120 426 240 Q418 340 436 440 H398 Q384 300 398 160 Z"/>
+            <text class="label" x="22" y="260" transform="rotate(-80 22 260)">Elliott Bay</text>
+            <text class="label" x="232" y="140">Lake Union</text>
+            <text class="label" x="413" y="40" transform="rotate(86 413 40)">Lake Washington</text>
+            <path class="route" pathLength="100" d="M150 214 Q 170 250 196 290 Q 240 300 262 316 Q 300 280 326 250"/>
+            <g class="node room" data-i="0" data-k="water" tabindex="0"><circle class="ring" cx="150" cy="214"/><circle class="dot" cx="150" cy="214"/><text x="161" y="210">Waterfront</text><text class="sub" x="161" y="223">AI House, Pier 70</text></g>
+            <g class="node law" data-i="1" data-k="down" tabindex="0"><circle class="ring" cx="196" cy="290"/><circle class="dot" cx="196" cy="290"/><text x="207" y="286">Downtown</text><text class="sub" x="207" y="299">7 firms, 1st to 5th Ave</text></g>
+            <g class="node law" data-i="2" data-k="pioneer" tabindex="0"><circle class="ring" cx="182" cy="360"/><circle class="dot" cx="182" cy="360"/><text x="193" y="356">Pioneer Square</text><text class="sub" x="193" y="369">Summit Law Group</text></g>
+            <g class="node" data-i="3" data-k="first" tabindex="0"><circle class="ring" cx="262" cy="316"/><circle class="dot" cx="262" cy="316"/><text x="273" y="330">First Hill</text><text class="sub" x="273" y="343">Swedish · Virginia Mason</text></g>
+            <g class="node room" data-i="4" data-k="cap" tabindex="0"><circle class="ring" cx="326" cy="250"/><circle class="dot" cx="326" cy="250"/><text x="337" y="246">Capitol Hill</text><text class="sub" x="337" y="259">Foundations</text></g>
+            <g class="node" data-i="5" data-k="slu" tabindex="0"><circle class="ring" cx="262" cy="200"/><circle class="dot" cx="262" cy="200"/><text x="273" y="208">South Lake Union</text><text class="sub" x="273" y="221">Amazon · Fred Hutch</text></g>
+            <g class="node room" data-i="6" data-k="ud" tabindex="0"><circle class="ring" cx="312" cy="56"/><circle class="dot" cx="312" cy="56"/><text x="323" y="52">U District</text><text class="sub" x="323" y="65">UW Allen School</text></g>
+            <g class="node" data-i="7" data-k="bell" tabindex="0"><circle class="ring" cx="498" cy="330"/><circle class="dot" cx="498" cy="330"/><text x="498" y="300" text-anchor="middle">Bellevue</text><text class="sub" x="498" y="313" text-anchor="middle">Overlake</text></g>
+          </svg>
+        </div>
+        <div class="mapkey"><span><i style="background:var(--ink)"></i>law firms</span><span><i style="background:var(--forest)"></i>hospitals, big employers</span><span><i style="background:var(--amber)"></i>rooms to host in</span><span>Positions approximate</span></div>
+      </div>
+      <div class="rv"><div class="panel" id="mappanel"></div></div>
+    </div>
+    <div class="section-head narrow rv" style="margin-top:44px;margin-bottom:16px">
+      <h3>The first firms, by what they've said about AI.</h3>
+    </div>
+    <div class="firms rv">
+      <div class="firm"><span class="stance ban">Bans public AI</span><b>Ashurst Perkins Coie</b><span class="w">1301 Second Ave · 350+ lawyers</span><p>No confidential client data in public AI tools. The CIO sits in Seattle. Quote their policy back with the kit.</p></div>
+      <div class="firm"><span class="stance cloud">Chose cloud AI</span><b>Davis Wright Tremaine</b><span class="w">920 Fifth Ave · 600+ firmwide</span><p>Harvey and Copilot firmwide since August. Underdog covers the lawyer's own inbox, where Harvey doesn't go.</p></div>
+      <div class="firm"><span class="stance cloud">Approved-tools list</span><b>K&amp;L Gates</b><span class="w">925 Fourth Ave</span><p>ISO 42001 certified in March. Their governance process is the review, written down. Get on the list.</p></div>
+      <div class="firm"><span class="stance quiet">Nothing public</span><b>Ballard Spahr · Stoel Rives · Foster Garvey · Fenwick · Summit</b><span class="w">Third Ave to Pioneer Square</span><p>Open field. One lunch-and-learn each, and the first Naval mode night invites.</p></div>
+    </div>
+    <p class="src" style="margin-top:14px">Workforce: <a href="https://www.cbre.com/press-releases/seattle-retains-no-2-ranking-cbres-2026-scoring-tech-talent-report">CBRE</a>. Firms: <a href="https://www.ashurstperkinscoie.com/en/ai-at-ashurst-perkins-coie/">Ashurst Perkins Coie</a>, <a href="https://dwt.com/about/news/2026/08/dwt-expands-firmwide-ai-capabilities-with-harvey">DWT</a>, <a href="https://www.klgates.com/KL-Gates-Among-First-Law-Firms-Globally-to-Earn-ISO/IEC-420012023-AI-Governance-Certification-3-9-2026">K&amp;L Gates</a>. Bar survey: <a href="https://www.lawnext.com/2025/06/washington-state-lawyers-show-limited-ai-adoption-despite-growing-interest-new-survey-reveals.html">WSBA</a>. Health: <a href="https://www.fredhutch.org/en/news/center-news/2025/07/ai-echnology-is-making-charting-less-time-consuming.html">Fred Hutch</a>, <a href="https://www.abridge.com/press-release/sch-abridge">Seattle Children's</a>. Rooms: <a href="https://www.geekwire.com/2025/inside-seattles-ai-house-waterfront-space-designed-as-hub-for-new-wave-of-startups/">AI House</a>, <a href="https://iapp.org/community/iapp-chapters/seattle-wa">IAPP Seattle</a>.</p>
+  </div>
+</section>
+
+<section id="cities" class="band">
+  <div class="glows" aria-hidden="true"><i class="t"></i></div>
+  <div class="wrap">
+    <div class="section-head narrow rv">
+      <p class="eyebrow">Two cities</p>
+      <h2>Seattle finds the pack. San Francisco closes the partners.</h2>
+      <p class="lead muted short">I live in Seattle. One week a month I work from San Francisco, more in launch month. In Seattle the job is to find new rooms. In SF it's to show up in the rooms Underdog already has.</p>
+    </div>
+    <div class="split">
+      <div class="corridor rv" id="corridor">
+        <svg viewBox="96 0 420 440" role="img" aria-label="West Coast corridor: Vancouver, Seattle, the Bay Area, Las Vegas">
+          <path class="coast" d="M120 10 Q90 80 120 130 Q80 200 110 260 Q90 330 140 430"/>
+          <path class="route" d="M205 36 L190 112 L168 280 L188 318 L410 360"/>
+          <g class="stop"><circle cx="205" cy="36" r="5"/><text x="218" y="33">Vancouver</text><text class="sub" x="218" y="46">Web Summit, May 25 to 28</text></g>
+          <g class="stop home"><circle cx="190" cy="112" r="6"/><text class="big" x="204" y="109">Seattle</text><text class="sub" x="204" y="123">Home base. AI Week, Naval mode nights, Tech Week</text></g>
+          <g class="stop"><circle cx="168" cy="280" r="6"/><text class="big" x="182" y="270">San Francisco</text><text class="sub" x="182" y="284">One week a month. Moscone: Stripe Sessions,</text><text class="sub" x="182" y="297">AI Engineer Code Summit and World's Fair</text></g>
+          <g class="stop"><circle cx="188" cy="318" r="4"/><text class="sub" x="198" y="330">South SF, Menlo Park, Santa Clara, San Jose</text></g>
+          <g class="stop"><circle cx="410" cy="360" r="5"/><text x="423" y="357">Las Vegas</text><text class="sub" x="423" y="370">CES, Jan 6 to 9</text></g>
+        </svg>
+      </div>
+      <div class="legend rv">
+        <div class="row"><span class="n">1</span><div><b>The partners' home turf</b><span>Stripe in South San Francisco. NVIDIA in Santa Clara, with GTC in San Jose. a16z in Menlo Park. The SF week is when partner meetings happen in person.</span></div></div>
+        <div class="row"><span class="n">2</span><div><b>Moscone, twice</b><span>Stripe Sessions May 4 to 6. AI Engineer World's Fair Jun 29 to Jul 1, and Code Summit Nov 10 to 12 for the first SF week.</span></div></div>
+        <div class="row"><span class="n">3</span><div><b>SF rooms to demo in</b><span>The Hardware Meetup demo nights, Founders Inc at Fort Mason, and Product Hunt Demo Night after launch.</span></div></div>
+        <div class="row"><span class="n">4</span><div><b>A bridge between the two</b><span>Foundations, the Capitol Hill founder community, opened an SF space in February. One membership, both cities, the same founders.</span></div></div>
+      </div>
+    </div>
+    <p class="src" style="margin-top:14px"><a href="https://stripesessions.com/">Stripe Sessions</a> · <a href="https://ai.engineer/">AI Engineer</a> · <a href="https://luma.com/sj-hardware-meetup">Hardware Meetup</a> · <a href="https://luma.com/festival">Founders Inc</a> · <a href="https://luma.com/xj4wb69u">Product Hunt Demo Night</a> · <a href="https://www.geekwire.com/2026/seattle-founder-community-foundations-is-expanding-to-san-francisco/">Foundations SF</a></p>
+  </div>
+</section>
+<section id="calendar">
+  <div class="glows" aria-hidden="true"><i class="s"></i></div>
+  <div class="wrap">
+    <div class="section-head narrow rv">
+      <p class="eyebrow">Be the voice</p>
+      <h2>Where Sigil speaks next.</h2>
+      <p class="lead muted short">17 stages, Oct to Jul. I handle the submissions, drafts and follow-up, so Sigil only gives the talk. Click any dot.</p>
+    </div>
+    <div class="stripwrap rv"><div class="strip" id="strip"></div></div>
+    <div class="dotkey"><span><i style="background:var(--forest)"></i>Sigil speaks</span><span><i style="background:var(--sage)"></i>demo</span><span><i style="background:var(--ink)"></i>we host</span><span><i style="background:var(--amber)"></i>I go</span><span><i style="background:var(--red)"></i>deadline</span></div>
+    <div class="evgrid">
+      <div class="panel evcard rv" id="evcard" aria-live="polite"></div>
+      <div class="panel rv">
+        <h3>The talks, drafted</h3>
+        <div class="tabs" role="tablist" aria-label="Talk drafts">
+          <button class="pill-btn" role="tab" aria-selected="true" data-talk="0">Stripe</button>
+          <button class="pill-btn" role="tab" aria-selected="false" data-talk="1">Privacy</button>
+          <button class="pill-btn" role="tab" aria-selected="false" data-talk="2">Podcasts</button>
+        </div>
+        <div id="talkpanel"></div>
+      </div>
+    </div>
+    <p class="src" style="margin-top:14px">Dates checked on organizer pages, Oct 22, 2026. Not yet posted: Seattle Tech Week 2027 dates; CES, GTC, Legalweek and HIMSS prices. Sigil's story from his <a href="https://underdog.ai/founder">founder's note</a> and <a href="https://underdog.ai/manifesto">manifesto</a>.</p>
+  </div>
+</section>
+
+<section id="launch" class="band">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <div class="section-head">
+          <p class="eyebrow">Launch ownership</p>
+          <h2>Open the gates in waves.</h2>
+          <p class="lead muted">Invite-only is an asset until the waitlist goes cold. Each wave opens with a reason: an event, a device, a launch day.</p>
+        </div>
+        <div class="tiles">
+          <div class="tile"><b>Launch day</b>iPhone ships, Product Hunt at 12:01am PT, Show HN the same week. Sigil and the team in every thread.</div>
+          <div class="tile"><b>Ready before</b>Creator kit out a week early. Pack Leaders get the build first. Waitlist gets its one email, as promised.</div>
+        </div>
+      </div>
+      <div class="waves rv" id="waves">
+        <svg viewBox="0 0 520 330" role="img" aria-label="Illustration of five invite waves, the largest on iPhone launch week">
+          <line class="base" x1="20" y1="270" x2="500" y2="270"/>
+          <rect class="bar" x="40" y="214" width="62" height="56" rx="8"/>
+          <rect class="bar" x="132" y="196" width="62" height="74" rx="8"/>
+          <rect class="bar" x="224" y="160" width="62" height="110" rx="8"/>
+          <rect class="bar hi" x="316" y="40" width="62" height="230" rx="8"/>
+          <rect class="bar" x="408" y="120" width="62" height="150" rx="8"/>
+          <g text-anchor="middle">
+            <text x="71" y="292">AI Week</text><text class="s" x="71" y="308">Oct 25</text>
+            <text x="163" y="292">Rooms</text><text class="s" x="163" y="308">Nov to Dec</text>
+            <text x="255" y="292">CES</text><text class="s" x="255" y="308">Jan 6</text>
+            <text x="347" y="292">iPhone</text><text class="s" x="347" y="308">launch week</text>
+            <text x="439" y="292">Creators</text><text class="s" x="439" y="308">the week after</text>
+          </g>
+        </svg>
+        <p class="src">Illustration. Bar heights show planned wave size, not data.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="creators">
+  <div class="wrap">
+    <div class="section-head narrow rv">
+      <p class="eyebrow">Creators</p>
+      <h2>The Wall of Love is already a creator program.</h2>
+      <p class="lead muted short">It just doesn't know it yet. Three tiers, one ask each, no paid posts.</p>
+    </div>
+    <div class="tiers rv">
+      <div class="tier">
+        <span class="eyebrow">Friends of the pack</span>
+        <div class="avs" aria-label="Naval, Ben Horowitz, Guillermo Rauch, Thomas Wolf, Mario Gabriele, Varun Srinivasan">
+          <span class="av" style="background:#c8395f">N</span><span class="av" style="background:#d9821f">BH</span><span class="av" style="background:#4f9dff">GR</span><span class="av" style="background:#4cc38a">TW</span><span class="av" style="background:#9b6dff">MG</span><span class="av" style="background:#e8a33a">VS</span>
+        </div>
+        <p class="ask"><b>The ask:</b> one share on launch day, with a heads-up a week before. Nothing scripted.</p>
+      </div>
+      <div class="tier">
+        <span class="eyebrow">Creators</span>
+        <div class="avs"><span class="av g">YT</span><span class="av g">NL</span><span class="av g">X</span><span class="av g">+</span></div>
+        <p class="ask"><b>The ask:</b> an honest review. Tech YouTubers who test local AI, newsletter writers, Mac and Windows power users. Early build, a direct line to the team, their own invite codes.</p>
+      </div>
+      <div class="tier">
+        <span class="eyebrow">Members</span>
+        <div class="avs"><span class="av g">PL</span><span class="av g">PL</span><span class="av g">PL</span><span class="av g">PL</span><span class="av g">PL</span></div>
+        <p class="ask"><b>The ask:</b> share a workflow. Pack Leaders post how they use Underdog; the best ones land in the library and the weekly story.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="paid" class="band">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <div class="section-head">
+          <p class="eyebrow">Paid channels</p>
+          <h2>Buy reach. Never sell attention.</h2>
+          <p class="lead muted">No ads inside Underdog, ever. Buying ads to reach people is fine. Small tests first, and only the ones that make members who stay get more money.</p>
+        </div>
+        <div class="mix" id="mix">
+          <div class="mixrow"><span>Days 1 to 30</span><div class="mixbar"><span class="c" style="--w:60%">Community</span><span class="p" style="--w:30%">Partners</span><span class="a" style="--w:10%">Paid</span></div></div>
+          <div class="mixrow"><span>Days 31 to 60</span><div class="mixbar"><span class="c" style="--w:45%">Community</span><span class="p" style="--w:30%">Partners</span><span class="a" style="--w:25%">Paid</span></div></div>
+          <div class="mixrow"><span>Days 61 to 90</span><div class="mixbar"><span class="c" style="--w:35%">Community</span><span class="p" style="--w:25%">Partners</span><span class="a" style="--w:40%">Paid</span></div></div>
+        </div>
+        <p class="src" style="margin-top:8px">Planned split of time and effort. Paid rises into launch.</p>
+      </div>
+      <div class="paidlist rv">
+        <div><span class="ic">1</span><span><b>Podcasts and newsletters.</b> Sponsor the shows builders and privacy people already trust.</span></div>
+        <div><span class="ic">2</span><span><b>Reddit and X.</b> Promoted posts in r/LocalLLaMA, r/privacy and r/macapps, and to followers of local-AI accounts.</span></div>
+        <div><span class="ic">3</span><span><b>YouTube creators.</b> Paid integrations only where the creator's review stays honest.</span></div>
+        <div><span class="ic">4</span><span><b>Search.</b> People already looking: "private AI email assistant," "Granola alternative," "local AI for Mac."</span></div>
+        <div><span class="ic">!</span><span><b>No tracking pixels.</b> Underdog strips them from your inbox, so we don't use them either. Every paid channel gets its own invite code and tagged link.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="product">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <div class="section-head">
+          <p class="eyebrow">Growth shapes the product</p>
+          <h2>A Friday note the team actually uses.</h2>
+          <p class="lead muted">Underdog ships almost every day. Growth sees where people stop, what IT asks and which errands fail. One page every Friday puts that in front of the people building.</p>
+        </div>
+      </div>
+      <div class="note rv" aria-label="Example layout of the Friday note">
+        <div class="hd"><b>Friday note</b><span>example layout</span></div>
+        <div class="ln"><span>Where people stopped</span><i class="sh"></i></div>
+        <div class="ln"><span>What IT asked</span><i class="sh"></i></div>
+        <div class="ln"><span>Errands that failed</span><i class="sh"></i></div>
+        <div class="ln"><span>What Pack Leaders want</span><i class="sh"></i></div>
+        <div class="ln"><span>One test next week</span><i class="sh"></i></div>
+        <p class="ft">Five lines. Sent Friday, read Monday, shipped by Wednesday.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="posts" class="band">
+  <div class="wrap rv">
+    <div class="section-head narrow">
+      <p class="eyebrow">In Underdog's voice</p>
+      <h2>Three posts, ready to edit.</h2>
+    </div>
+    <div class="posts">
+      <div class="post">
+        <span class="eyebrow">X · @underdogai</span>
+        <div class="t">People keep asking how to pay me. You can't. Tell a friend instead.</div>
+        <div class="thread"><p>I live on your computer. No server, nothing to bill you for.</p><p>There's a button in my sidebar now. Good dogs come in packs. woof.</p></div>
+      </div>
+      <div class="post">
+        <span class="eyebrow">X · Sigil</span>
+        <div class="t">Seattle: Naval mode night. Bring a laptop, leave the cloud at home.</div>
+        <p>Forty people at AI House. Underdog on Mac, Windows and an RTX Spark laptop. Lawyers, doctors and anyone whose inbox can't leak: you're first on the list.</p>
+      </div>
+      <div class="post">
+        <span class="eyebrow">r/LocalLLaMA · the team</span>
+        <div class="t">We squeezed a 27B into 7.89 GB that still picks the right tool. Ask us anything.</div>
+        <p>I work on Underdog. Saluki is open source on Hugging Face. Here's what we gave up to get it under 8 GB, and where it still breaks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="risks" class="ink">
+  <div class="glows" aria-hidden="true"><i class="t"></i><i class="a"></i></div>
+  <div class="wrap rv">
+    <div class="section-head narrow">
+      <p class="eyebrow">What could break it</p>
+      <h2>The honest list.</h2>
+    </div>
+    <div class="risks">
+      <div class="risk"><div><b>Apple and Microsoft ship their own.</b><span>They own the operating system.</span></div><div>Lead with what they won't do: Gmail and Outlook, Linear and Granola, any merchant, any open model.</div></div>
+      <div class="risk"><div><b>The hardware floor.</b><span>Apple silicon, or 16 GB on Windows.</span></div><div>Start with people who already own it. Woof 4B for smaller machines. PC makers preload it.</div></div>
+      <div class="risk"><div><b>The waitlist goes cold.</b><span>Invite-only cuts both ways.</span></div><div>Waves with a reason, and one email per build.</div></div>
+      <div class="risk"><div><b>An errand goes wrong in public.</b><span>An agent that pays is held to a higher bar.</span></div><div>"He asks before he pays" is the message. Post what happened and the fix the same day.</div></div>
+    </div>
+    <div class="section-head narrow" style="margin-top:44px;margin-bottom:18px">
+      <p class="eyebrow">And what this plan refuses</p>
+      <h2 style="font-size:clamp(26px,3.4vw,36px)">Loyal means loyal. Growth doesn't get an exception.</h2>
+    </div>
+    <div class="tiles nope">
+      <div class="tile"><b>Ads in the product</b>Underdog is never ad-supported. Paid reach outside it is fine.</div>
+      <div class="tile"><b>Selling member data</b>There's nothing on a server to sell, and it stays that way.</div>
+      <div class="tile"><b>Tracking pixels</b>We strip them from inboxes. We don't put them in ads.</div>
+      <div class="tile"><b>Cash for invites</b>It brings people who leave. Status and early access instead.</div>
+    </div>
+  </div>
+</section>
+
+<section id="budget">
+  <div class="wrap rv">
+    <div class="section-head narrow">
+      <p class="eyebrow">What it costs</p>
+      <h2>About $16K to $21K for 90 days.</h2>
+      <p class="lead muted short">Salaries excluded. Solid bars are posted prices, lighter bars are estimates, dashed is the high end of a range.</p>
+    </div>
+    <div class="bud" id="bud"></div>
+    <div class="budkey"><span><i style="background:var(--forest)"></i>posted price</span><span><i style="background:var(--sage)"></i>estimate</span><span><i style="background:var(--sage-soft);border:1px dashed var(--forest)"></i>high end of range</span></div>
+    <p class="src" style="margin-top:12px">Free: SXSW Pitch, Founders Live, AI Tinkerers, the Stripe proposal, invites. Prices from <a href="https://luma.com/gi2fceh5">Seattle AI Week</a> and <a href="https://stripesessions.com/">Stripe Sessions</a>; AI House hosts AI events free.</p>
+
+    <div class="section-head narrow" style="margin-top:48px">
+      <p class="eyebrow">A week in the role</p>
+      <h2 style="font-size:clamp(26px,3.4vw,36px)">Monday to Friday.</h2>
+    </div>
+    <div class="week">
+      <div><b>Mon</b>Source report: which invites, posts and rooms made members who stayed.</div>
+      <div><b>Tue</b>Partners: merchants, PC makers, integrations.</div>
+      <div><b>Wed</b>A room: Naval mode night, Tinkerers demo, firm lunch.</div>
+      <div><b>Thu</b>The pack: Dogpark, Reddit, creators, Sigil's stages.</div>
+      <div><b>Fri</b>The Friday note to the team. Paid budget moved to what worked.</div>
+    </div>
+    <p class="src" style="margin-top:10px">One week a month the strip runs from San Francisco, with partner meetings on Tuesday and an SF room on Wednesday.</p>
+  </div>
+</section>
+
+<section id="me" class="band">
+  <div class="wrap rv">
+    <div class="section-head narrow">
+      <p class="eyebrow">Why me</p>
+      <h2>I've always been the underdog's salesperson.</h2>
+      <p class="lead muted short">Nobody was searching for anything I've sold, so I went to them. Each number sits under the job it came from.</p>
+    </div>
+    <div class="jobs">
+      <div class="job">
+        <div class="who"><b>Uber</b><span>SMB Account Manager, Seattle · 2026 to now</span></div>
+        <ul>
+          <li>Q3 at <strong>104% of quota</strong> against a <strong>37% blended growth quota</strong>.</li>
+          <li><strong>101%</strong> in my Q2 ramp.</li>
+          <li>Awarded a bigger book on that finish: <strong>$8M to $40M</strong>, 130+ restaurant brands. Merchant relationships are the Buy with Link job.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="who"><b>Garmentory.com</b><span>Marketplace for boutiques and independent brands · 2023 to 2026</span></div>
+        <ul>
+          <li>Built my own AI outbound system to find and sign boutiques, for about <strong>$200 a month</strong>.</li>
+          <li>April to August 2026, on a four-person team, my boutiques drove <strong>67.5% of GMV from net-new partners</strong>. <strong>Every one went on to sell.</strong></li>
+          <li>Led a <strong>free 4-week test</strong> for about 80 partners; roughly a third kept paying.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="who"><b>Talk Carpet</b><span>Co-Founder &amp; GTM Sales Lead · 2016 to 2023</span></div>
+        <ul>
+          <li>Grew a <strong>$500K loan</strong> into <strong>$7M a year</strong>, for a Danish brand nobody here knew.</li>
+          <li>Sold to <strong>Google, Netflix, Uber, Dropbox</strong> through procurement. The enterprise review, from the other side of the table.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="callback" style="margin-top:28px">A week here is a year. This page took a day.</p>
+  </div>
+</section>
+
+<section id="saved">
+  <div class="wrap rv">
+    <div class="section-head narrow">
+      <p class="eyebrow">Saved for the conversation</p>
+      <h2>There's more. It's better in person.</h2>
+    </div>
+    <div class="saved">
+      <div><span class="pill-amber">In the full plan</span><b>The first ten firms</b><span>Which Seattle firms, which champion, in what order.</span></div>
+      <div><span class="pill-amber">In the full plan</span><b>Launch night, hour by hour</b><span>What runs in parallel, what waits, and when to open the next wave.</span></div>
+      <div><span class="pill-amber">In the full plan</span><b>The creator list</b><span>Who goes first, who gets the early build, and why.</span></div>
+      <div><span class="pill-amber">In the full plan</span><b>The merchant list</b><span>Where an agent checks out cleanly today, and where it breaks.</span></div>
+    </div>
+    <div class="saved-cta">
+      <p>Want the full plan? Let's find 30 minutes.</p>
+      <a class="btn" href="#contact">Let's talk <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap rv">
+    <div class="more">
+      <div>
+        <p class="eyebrow">More about me</p>
+        <h3 style="margin:8px 0 6px">More about me and what else I've built.</h3>
+        <p class="muted">The Garmentory acquisition system, my other pages, my resume and the full story.</p>
+      </div>
+      <a class="btn" href="https://cdpgit-byte.github.io/charls/">See the page <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="closer" id="contact">
+  <div class="glows" aria-hidden="true"><i class="s"></i><i class="a"></i></div>
+  <div class="wrap">
+    <p class="eyebrow">Get in touch</p>
+    <h2 style="margin-top:14px">You build the dog.<span class="line2">I'll find the pack.</span></h2>
+    <p class="lead muted">Happy to walk Sigil through any part of this, or to start on the Nov 3 deadline this week.</p>
+    <div class="contact">
+      <a class="btn" href="https://drive.google.com/file/d/1IW-o7nFI-EMSgSZKPYAgWVgz0P_3tT27/view?usp=sharing">Resume <span class="arrow">→</span></a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/charls-daren-pasion-97a16420a">LinkedIn <span class="arrow">→</span></a>
+      <span class="email"><span id="emailText">cdp.gervacio@gmail.com</span><button type="button" id="copyEmail">Copy</button></span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Charls Daren Pasion · Seattle, WA</span>
+    <span>Underdog facts from underdog.ai. Event dates verified Oct 22, 2026. Everything else is mine.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themeToggle'), icon=document.getElementById('themeIcon'), label=document.getElementById('themeLabel');
+  function current(){var t=root.getAttribute('data-theme'); if(t) return t; return (window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}
+  function paint(){var d=current()==='dark'; icon.textContent=d?'◑':'◐'; label.textContent=d?'Light':'Dark';}
+  try{var saved=localStorage.getItem('underdog-plan-theme'); if(saved==='dark'||saved==='light') root.setAttribute('data-theme',saved);}catch(e){}
+  paint();
+  btn.addEventListener('click',function(){var next=current()==='dark'?'light':'dark'; root.setAttribute('data-theme',next); try{localStorage.setItem('underdog-plan-theme',next);}catch(e){} paint();});
+  if(window.matchMedia){try{window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',paint);}catch(e){}}
+
+  var copy=document.getElementById('copyEmail'), txt=document.getElementById('emailText');
+  copy.addEventListener('click',function(){
+    var done=function(){copy.textContent='Copied'; setTimeout(function(){copy.textContent='Copy';},1600);};
+    var fallback=function(){try{var r=document.createRange(); r.selectNodeContents(txt); var s=window.getSelection(); s.removeAllRanges(); s.addRange(r);}catch(e){} copy.textContent='Selected'; setTimeout(function(){copy.textContent='Copy';},1600);};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt.textContent).then(done).catch(fallback);} else {fallback();}
+  });
+
+  /* reveal on scroll */
+  /* the pack: an invite tree that grows from one member. Click to send an invite; hover to trace an invite chain home. */
+  (function(){
+    var box=document.getElementById('pack'), cv=document.getElementById('packcv');
+    if(!box||!cv||!cv.getContext) return;
+    var ctx=cv.getContext('2d'), stat=document.getElementById('packstat');
+    var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var W=0,H=0,DPR=1,N=[],hover=-1,visible=true,raf=null,last=0,col={};
+    var MAX=150;
+    function rd(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim()||'#888';}
+    function pal(){col={ink:rd('--ink'),line:rd('--line'),acc:rd('--forest'),amb:rd('--amber'),mut:rd('--muted'),bg:rd('--card')};}
+    function size(){var r=box.getBoundingClientRect(); W=Math.max(300,r.width|0); H=Math.max(200,r.height|0); DPR=Math.min(2,window.devicePixelRatio||1); cv.width=W*DPR; cv.height=H*DPR;}
+    function seed(){N=[{x:W*.5,y:H*.55,p:-1,g:0,k:0,b:performance.now()-2000,buy:false}];}
+    function spawn(from,now){
+      var a=N[from]; if(!a) return -1;
+      for(var t=0;t<14;t++){
+        var base=a.p<0?Math.random()*6.283:Math.atan2(a.y-N[a.p].y,a.x-N[a.p].x);
+        var ang=base+(Math.random()-.5)*(a.p<0?6.283:1.9), d=34+Math.random()*34;
+        var x=a.x+Math.cos(ang)*d, y=a.y+Math.sin(ang)*d*.8;
+        if(x<14||x>W-14||y<14||y>H-14) continue;
+        var ok=true; for(var i=0;i<N.length;i++){var dx=N[i].x-x,dy=N[i].y-y; if(dx*dx+dy*dy<22*22){ok=false;break;}}
+        if(!ok) continue;
+        a.k++; N.push({x:x,y:y,p:from,g:a.g+1,k:0,b:now,buy:Math.random()<.16}); return N.length-1;
+      }
+      return -1;
+    }
+    function grow(now){
+      if(N.length>=MAX){seed(); return;}
+      var c=[]; for(var i=0;i<N.length;i++) if(N[i].k<3) c.push(i);
+      if(!c.length) return; spawn(c[(Math.random()*c.length)|0],now);
+    }
+    function chain(i){var s={}; while(i>=0){s[i]=1; i=N[i].p;} return s;}
+    function draw(now){
+      ctx.setTransform(DPR,0,0,DPR,0,0); ctx.clearRect(0,0,W,H);
+      var on=hover>=0?chain(hover):null, gmax=0, buys=0;
+      for(var i=1;i<N.length;i++){var n=N[i],p=N[n.p],t=Math.min(1,(now-n.b)/700);
+        var mx=(n.x+p.x)/2+(n.y-p.y)*.18, my=(n.y+p.y)/2-(n.x-p.x)*.18;
+        ctx.strokeStyle=on&&on[i]?col.acc:col.line; ctx.lineWidth=on&&on[i]?2:1.2; ctx.globalAlpha=t;
+        ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.quadraticCurveTo(mx,my,p.x+(n.x-p.x)*t,p.y+(n.y-p.y)*t); ctx.stroke();
+      }
+      for(var j=0;j<N.length;j++){var m=N[j],age=now-m.b,t2=Math.min(1,age/600); if(m.g>gmax)gmax=m.g; if(m.buy&&age>900)buys++;
+        var r=j===0?7:(on&&on[j]?5:3.6);
+        ctx.globalAlpha=t2;
+        if(age<1600&&!reduce){ctx.globalAlpha=(1-age/1600)*.5; ctx.fillStyle=col.acc; ctx.beginPath(); ctx.arc(m.x,m.y,r+age/90,0,6.283); ctx.fill(); ctx.globalAlpha=t2;}
+        ctx.fillStyle=j===0?col.acc:(m.buy&&age>900?col.amb:(age<1600?col.acc:col.ink));
+        ctx.beginPath(); ctx.arc(m.x,m.y,r*t2,0,6.283); ctx.fill();
+      }
+      ctx.globalAlpha=1;
+      if(N.length){ctx.fillStyle=col.mut; ctx.font='600 11px Geist, system-ui, sans-serif'; ctx.fillText('first member',N[0].x+11,N[0].y+4);}
+      if(on){var depth=N[hover].g; ctx.fillStyle=col.ink; ctx.font='600 12px Geist, system-ui, sans-serif';
+        var lbl=depth===0?'The first member':depth+(depth===1?' invite':' invites')+' from the first member';
+        var tx=Math.min(W-ctx.measureText(lbl).width-8,N[hover].x+10); ctx.fillText(lbl,tx,Math.max(14,N[hover].y-10));}
+      if(stat) stat.textContent=N.length+' in the pack · '+gmax+' generations · '+buys+' bought something with Link';
+    }
+    function loop(now){
+      raf=null;
+      if(now-last>420){grow(now); last=now;}
+      draw(now);
+      if(visible&&!reduce) raf=requestAnimationFrame(loop);
+    }
+    function kick(){if(!raf) raf=requestAnimationFrame(loop);}
+    function near(x,y){var b=-1,bd=1e9; for(var i=0;i<N.length;i++){var dx=N[i].x-x,dy=N[i].y-y,d=dx*dx+dy*dy; if(d<bd){bd=d;b=i;}} return bd<40*40?b:-1;}
+    function pos(e){var r=cv.getBoundingClientRect(); return [e.clientX-r.left,e.clientY-r.top];}
+    cv.addEventListener('mousemove',function(e){var q=pos(e); hover=near(q[0],q[1]); if(reduce) draw(performance.now());});
+    cv.addEventListener('mouseleave',function(){hover=-1; if(reduce) draw(performance.now());});
+    cv.addEventListener('click',function(e){var q=pos(e),b=-1,bd=1e9; for(var i=0;i<N.length;i++){var dx=N[i].x-q[0],dy=N[i].y-q[1],d=dx*dx+dy*dy; if(d<bd&&N[i].k<5){bd=d;b=i;}}
+      if(N.length>=MAX) seed(); var made=spawn(b<0?0:b,performance.now()); if(made<0) spawn(0,performance.now()); kick(); if(reduce) draw(performance.now());});
+    pal(); size(); seed();
+    if(reduce){var t0=performance.now()-5000; for(var k=0;k<70;k++) grow(t0); draw(performance.now());}
+    else { for(var k2=0;k2<32;k2++) grow(performance.now()-3000); kick(); }
+    var rt=null; window.addEventListener('resize',function(){clearTimeout(rt); rt=setTimeout(function(){size(); seed(); if(reduce){for(var k=0;k<70;k++) grow(performance.now()-5000); draw(performance.now());} kick();},160);});
+    if('IntersectionObserver' in window){new IntersectionObserver(function(es){visible=es[0].isIntersecting; if(visible) kick();}).observe(box);}
+    var re=function(){pal(); draw(performance.now());};
+    new MutationObserver(re).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+    if(window.matchMedia){try{window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',re);}catch(e){}}
+  })();
+
+  /* ---------- v2 interactions ---------- */
+  var RM=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var NS='http://www.w3.org/2000/svg';
+  function el(tag,attrs,txt){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(txt!=null)e.textContent=txt;return e;}
+  function swap(node,html){node.innerHTML=html;node.classList.remove('fade-swap');void node.offsetWidth;node.classList.add('fade-swap');}
+  function onVisible(node,fn){if(!node)return; if('IntersectionObserver' in window){var o=new IntersectionObserver(function(es){es.forEach(function(e){fn(e.isIntersecting);});});o.observe(node);} else fn(true);}
+
+  /* engines */
+  var ENG=[
+    {h:'Tell a friend.',p:'The pricing page already says it. The sidebar invite (Oct 10) makes it one click.',li:['Every invite tagged by sender and source.','Rewards are status, not cash: first in line for iPhone, a Dogpark badge, a say in what ships.','A weekly good dog story from a real member.'],m:'Invites per active member, accepted, still here on day 7.'},
+    {h:'Bring me to work.',p:'The homepage asks members to send IT the security page. The kit makes that one forward.',li:['One page IT can say yes to, built from the security page.','Start where data can’t leave: law firms, clinics, finance.','One champion per firm, then the next desk. The same land-and-expand I run at Uber.'],m:'Firms with 3+ members, reviews passed, days from first member to IT sign-off.'},
+    {h:'Every errand counts.',p:'Buy with Link is the revenue. NVIDIA RTX Spark is the reach. Both are partner businesses.',li:['Merchants an agent can check out from cleanly: flights, tables, groceries.','The NVIDIA launch as a playbook for the next PC maker.','More one-click imports like Granola, so switching costs nothing.'],m:'Members who ran a paid errand, repeat errands, new devices shipping with Underdog.'}
+  ];
+  function engHTML(e){return '<h3>'+e.h+'</h3><p class="muted">'+e.p+'</p><ul>'+e.li.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul><p class="meta"><b style="color:var(--ink)">Measure:</b> '+e.m+'</p>';}
+  function tabset(btnSel,attr,panel,data,render){
+    var bs=document.querySelectorAll(btnSel); if(!bs.length||!panel) return;
+    function pick(i){bs.forEach(function(b){b.setAttribute('aria-selected',b.getAttribute(attr)==String(i)?'true':'false');}); swap(panel,render(data[i]));}
+    bs.forEach(function(b){b.addEventListener('click',function(){pick(+b.getAttribute(attr));});});
+    panel.innerHTML=render(data[0]);
+  }
+  tabset('[data-eng]','data-eng',document.getElementById('engpanel'),ENG,engHTML);
+
+  /* the loop */
+  (function(){
+    var g=document.getElementById('loopst'), runner=document.getElementById('runner'), cap=document.getElementById('loopcap'); if(!g) return;
+    var S=[['Invited','tagged by sender and source'],['Installed','Mac, Windows, soon iPhone'],['Day 7','still here a week later'],['Paid errand','bought something with Link'],['Invites someone','and the loop starts again']];
+    var cx=220,cy=220,R=150, nodes=[];
+    S.forEach(function(s,i){var a=-Math.PI/2+i*2*Math.PI/S.length, x=cx+R*Math.cos(a), y=cy+R*Math.sin(a);
+      var gg=el('g',{'class':'st',tabindex:'0',role:'button','aria-label':s[0]+': '+s[1]});
+      gg.appendChild(el('circle',{cx:x,cy:y,r:18})); gg.appendChild(el('text',{'class':'n',x:x,y:y+4,'text-anchor':'middle'},i+1));
+      var lx=x+(Math.cos(a)>.3?26:Math.cos(a)<-.3?-26:0), ly=y+(Math.sin(a)<-.5?-28:Math.sin(a)>.5?38:5);
+      gg.appendChild(el('text',{x:lx,y:ly,'text-anchor':Math.cos(a)>.3?'start':Math.cos(a)<-.3?'end':'middle'},s[0]));
+      gg.addEventListener('click',function(){cap.textContent=s[1]; nodes.forEach(function(n){n.classList.remove('on');}); gg.classList.add('on');});
+      gg.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();gg.dispatchEvent(new Event('click'));}});
+      g.appendChild(gg); nodes.push(gg);});
+    var arc=document.getElementById('looparc'), t0=null, vis=true, raf=null, P=9000;
+    function frame(ts){raf=null; if(!t0)t0=ts; var p=((ts-t0)%P)/P, a=-Math.PI/2+p*2*Math.PI;
+      runner.setAttribute('cx',cx+R*Math.cos(a)); runner.setAttribute('cy',cy+R*Math.sin(a));
+      var large=p>.5?1:0, ex=cx+R*Math.cos(a), ey=cy+R*Math.sin(a);
+      arc.setAttribute('d','M'+cx+' '+(cy-R)+' A'+R+' '+R+' 0 '+large+' 1 '+ex.toFixed(1)+' '+ey.toFixed(1));
+      var k=Math.floor(p*S.length+.02)%S.length; nodes.forEach(function(n,i){n.classList.toggle('on',i<=k);});
+      if(vis) raf=requestAnimationFrame(frame);}
+    if(RM){nodes.forEach(function(n){n.classList.add('on');}); arc.setAttribute('d','');}
+    else onVisible(document.getElementById('loop'),function(v){vis=v; if(v&&!raf) raf=requestAnimationFrame(frame);});
+  })();
+
+  /* community orbit */
+  (function(){
+    var g=document.getElementById('orbitg'), panel=document.getElementById('companel'); if(!g) return;
+    var C=[
+      {s:'Founders',w:'Founders and operators',h:'Inbox and calendar at full speed, with nothing leaving the laptop.',where:['Dogpark','X','Foundations, Seattle and SF','AI Tinkerers'],first:'Monthly office hours with Sigil, founders first.'},
+      {s:'Owners',w:'Small business owners',h:'Errands, bookings and Buy with Link. The work I do with 130+ restaurant brands at Uber.',where:['r/smallbusiness','Naval mode nights','Local merchant groups'],first:'A "run my errands" workflow pack.'},
+      {s:'Freelancers',w:'Freelancers',h:'Client confidentiality without a stack of subscriptions. It’s free.',where:['r/freelance','X','Newsletters'],first:'Workflows for proposals, client calls and follow-ups.'},
+      {s:'Pros',w:'Lawyers, clinicians, finance',h:'AI their firm can’t object to, because nothing goes to a server.',where:['IAPP Seattle chapter','Naval mode nights','Firm lunch-and-learns'],first:'The forward-to-IT note, one click from the app.'},
+      {s:'Builders',w:'Local-AI builders',h:'Saluki is open source. They run it, test it and tell their friends.',where:['r/LocalLLaMA','Hugging Face','AI Tinkerers','X'],first:'An AMA with every model release.'}
+    ];
+    var cx=260,cy=260,R=178,nodes=[],sel=0,ang=0,vis=true,raf=null,hover=false,last=0;
+    C.forEach(function(c,i){var gg=el('g',{'class':'g',tabindex:'0',role:'button','aria-label':c.w});
+      gg.appendChild(el('circle',{r:30})); gg.appendChild(el('text',{'text-anchor':'middle',y:48},c.s));
+      gg.addEventListener('click',function(){pick(i);}); gg.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(i);}});
+      gg.addEventListener('mouseenter',function(){hover=true;}); gg.addEventListener('mouseleave',function(){hover=false;});
+      g.appendChild(gg); nodes.push(gg);});
+    function place(){nodes.forEach(function(n,i){var a=ang+i*2*Math.PI/C.length-Math.PI/2; n.setAttribute('transform','translate('+(cx+R*Math.cos(a)).toFixed(1)+' '+(cy+R*Math.sin(a)).toFixed(1)+')');});}
+    function pick(i){sel=i; nodes.forEach(function(n,j){n.classList.toggle('on',j===i);}); var c=C[i];
+      swap(panel,'<span class="eyebrow">'+(i+1)+' of 5</span><h3 style="margin-top:6px">'+c.w+'</h3><p>'+c.h+'</p><p class="meta" style="margin-top:14px">Where they already are</p><div class="chips" style="margin-top:6px">'+c.where.map(function(x){return '<span class="chip">'+x+'</span>';}).join('')+'</div><p class="meta" style="margin-top:14px">First move</p><p>'+c.first+'</p><div class="evnav"><button class="pill-btn" type="button" id="comnext">Next group <span class="arrow">→</span></button></div>');
+      var nb=document.getElementById('comnext'); if(nb) nb.addEventListener('click',function(){pick((sel+1)%C.length);});}
+    function frame(ts){raf=null; var dt=last?ts-last:16; last=ts; if(!hover) ang+=dt*0.00006; place(); if(vis) raf=requestAnimationFrame(frame);}
+    place(); pick(0);
+    if(!RM) onVisible(document.getElementById('orbit'),function(v){vis=v; last=0; if(v&&!raf) raf=requestAnimationFrame(frame);});
+  })();
+
+  /* cloud vs local */
+  (function(){
+    var root=document.getElementById('cloudviz'); if(!root) return;
+    var bC=document.getElementById('mCloud'), bL=document.getElementById('mLocal'), sw=document.getElementById('naval'), cap=document.getElementById('cloudcap'), pk=document.getElementById('pk');
+    var P={cloud:document.getElementById('pCloud'),mail:document.getElementById('pMail'),acct:document.getElementById('pAcct'),i1:document.getElementById('pIn1'),i2:document.getElementById('pIn2'),i3:document.getElementById('pIn3')};
+    var srvC=document.getElementById('srvCloud'), srvA=document.getElementById('srvAcct'), mn=document.getElementById('modelname'), chip=root.querySelector('.chipm');
+    var mode='local', naval=false, packets=[], vis=true, raf=null, lastSpawn=0;
+    var CAP={cloud:'<b>Typical cloud AI:</b> mail, notes and audio leave the laptop so a server can read them. That server is what IT has to approve, and what can leak.',
+      local:'<b>Underdog:</b> the model is on the laptop, so mail, notes and audio never leave it. Mail syncs straight with your provider. Underdog’s own server sees only an account email and usage counts.',
+      naval:'<b>Naval mode:</b> Underdog never calls home. The only line left is the one to your mail provider.'};
+    function active(){if(mode==='cloud') return [['cloud','bad',1],['mail','ok',1]]; var a=[['i1','good',1],['i2','good',1],['i3','good',1],['mail','ok',1]]; if(!naval) a.push(['acct','ok',1]); return a;}
+    function render(){
+      bC.setAttribute('aria-pressed',mode==='cloud'); bL.setAttribute('aria-pressed',mode==='local');
+      sw.disabled=mode==='cloud'; sw.setAttribute('aria-checked',naval&&mode==='local'?'true':'false');
+      var on={}; active().forEach(function(x){on[x[0]]=1;});
+      for(var k in P) P[k].style.opacity=on[k]?1:.12;
+      srvC.style.opacity=mode==='cloud'?1:.2; srvA.style.opacity=(mode==='local'&&!naval)?1:.2;
+      chip.style.opacity=mode==='cloud'?.25:1; mn.textContent=mode==='cloud'?'not here':'on device';
+      cap.innerHTML=mode==='cloud'?CAP.cloud:(naval?CAP.naval:CAP.local);
+      packets.forEach(function(p){p.n.remove();}); packets=[];
+      if(RM) active().forEach(function(x){var L=P[x[0]].getTotalLength(),pt=P[x[0]].getPointAtLength(L*.5); pk.appendChild(el('circle',{r:5,cx:pt.x,cy:pt.y,'class':x[1]}));});
+    }
+    function spawn(){active().forEach(function(x){var n=el('circle',{r:x[0]==='acct'?3.5:5,'class':'pk '+x[1]}); pk.appendChild(n); packets.push({n:n,p:P[x[0]],t:0,rev:x[0]==='mail'&&Math.random()<.5});});}
+    function frame(ts){raf=null; if(ts-lastSpawn>900){spawn(); lastSpawn=ts;}
+      packets=packets.filter(function(p){p.t+=0.011; if(p.t>=1){p.n.remove(); return false;} var L=p.p.getTotalLength(), pt=p.p.getPointAtLength(L*(p.rev?1-p.t:p.t)); p.n.setAttribute('cx',pt.x); p.n.setAttribute('cy',pt.y); p.n.style.opacity=Math.min(1,Math.min(p.t,1-p.t)*6); return true;});
+      if(vis) raf=requestAnimationFrame(frame);}
+    bC.addEventListener('click',function(){mode='cloud'; render();});
+    bL.addEventListener('click',function(){mode='local'; render();});
+    sw.addEventListener('click',function(){if(mode!=='local') return; naval=!naval; render();});
+    render();
+    if(!RM) onVisible(root,function(v){vis=v; if(v&&!raf) raf=requestAnimationFrame(frame);});
+  })();
+
+  /* seattle map panel */
+  (function(){
+    var map=document.getElementById('map'), panel=document.getElementById('mappanel'); if(!map||!panel) return;
+    var D={
+      water:['Waterfront','AI House, Pier 70','108,000 square feet, with the AI2 Incubator as anchor tenant. It hosts AI events free. The first Naval mode night happens here.'],
+      down:['Downtown','The law row','Seven firms between 1st and 5th Ave. Ashurst Perkins Coie bans confidential client data in public AI tools. In the state bar’s survey, 63% of Washington lawyers who use AI use free public versions.'],
+      pioneer:['Pioneer Square','Summit Law Group','A mid-size firm with nothing public on AI. Open field, and a short walk from the law row.'],
+      first:['First Hill','Swedish · Virginia Mason · Harborview','Seattle’s big systems already chose cloud scribes for the exam room. Underdog covers the rest of a clinician’s day: inbox, calendar, notes. Washington’s My Health My Data Act makes on-device an easy yes.'],
+      cap:['Capitol Hill','Foundations','290 founder members, and a new San Francisco space since February. The founders community lives here.'],
+      slu:['South Lake Union','Amazon · Fred Hutch','Tens of thousands of tech workers who want a private assistant for their own mail, not their employer’s.'],
+      ud:['U District','UW Allen School','Builders and students. Saluki demos and local-AI nights.'],
+      bell:['Bellevue','Overlake · the Eastside','Microsoft’s side of the lake, and the right crowd for the Windows beta.']
+    };
+    var nodes=map.querySelectorAll('.node');
+    function pick(k){var d=D[k]; if(!d) return; nodes.forEach(function(n){n.classList.toggle('sel',n.getAttribute('data-k')===k);});
+      swap(panel,'<span class="eyebrow">'+d[0]+'</span><h3 style="margin-top:6px">'+d[1]+'</h3><p>'+d[2]+'</p>');}
+    nodes.forEach(function(n){n.addEventListener('click',function(){pick(n.getAttribute('data-k'));}); n.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(n.getAttribute('data-k'));}});});
+    pick('down');
+  })();
+
+  /* calendar lanes */
+  (function(){
+    var host=document.getElementById('strip'), card=document.getElementById('evcard'); if(!host) return;
+    var E=[
+      ['2026-10-25','2026-10-30','Seattle AI Week','Seattle','me','The AI Summit at Bell Harbor on Oct 27. Agentic AI Day on Oct 28 with Stripe’s Kathy Sun. Founders Live on Oct 29 for a 99-second Windows demo.','https://www.geekwire.com/calendar/tag/seattle-ai-week/2026-10/'],
+      ['2026-11-03',null,'Stripe Sessions proposals close','Online','due','The one to win. Live agentic commerce on Link, and Patrick Collison is an angel. Needs a title, a description and a short recording of Sigil.','https://stripesessions.com/'],
+      ['2026-11-03',null,'AI Tinkerers Seattle','Seattle','demo','Dev Tools night. Real systems, not decks: Saluki 27B on a 16 GB laptop.','https://seattle.aitinkerers.org/'],
+      ['2026-11-09',null,'Founders Live video challenge closes','Online','due','Free. Public voting runs to Dec 2, a month of Seattle reach.','https://luma.com/founderslive-seattle-2026-10'],
+      ['2026-11-10','2026-11-12','AI Engineer Code Summit','San Francisco','me','By application. The first SF week. The local-model crowd, and swyx of Latent Space.','https://ai.engineer/'],
+      ['2026-11-11',null,'SXSW Pitch closes','Online','due','PanelPicker closed in July. Pitch is the open door to Austin in March.','https://support.sxsw.com/hc/en-us/articles/16021157656845'],
+      ['2027-01-06','2027-01-09','CES','Las Vegas','demo','Demo through the NVIDIA RTX Spark partnership. "Datacenter speeds on a laptop" for the hardware press.','https://www.ces.tech/'],
+      ['2027-01-10','2027-01-12','NRF Retail’s Big Show','New York','me','Merchants asking how AI agents will shop. The Buy with Link list starts here.','https://nrfbigshow.nrf.com/'],
+      ['2027-03-01','2027-03-03','Legalweek','New York','me','Law firms that can’t send privileged mail to the cloud. Sigil’s leaked-inbox story opens every conversation.','https://www.event.law.com/legalweek/venue'],
+      ['2027-03-14','2027-03-18','NVIDIA GTC','San Jose','speak','No open call, so this goes through NVIDIA: a co-marketing session with the RTX Spark team.','https://www.nvidia.com/en-zz/gtc/faq/'],
+      ['2027-03-15','2027-03-21','SXSW','Austin','speak','If Pitch accepts us, the consumer stage, with iPhone in people’s hands.','https://sxsw.com/'],
+      ['2027-03-23','2027-03-24','IAPP Global Privacy Summit','Washington, DC','me','The privacy officers who approve tools at work. Bring the kit.','https://iapp.org/conferences/save-the-dates'],
+      ['2027-04-05','2027-04-08','HIMSS27','Chicago','me','Clinics and health systems. The Health beta and on-device notes are the demo.','https://www.himss.org/news-center/registration-opens-for-the-2027-himss-global-health-conference-and-exhibition/'],
+      ['2027-05-04','2027-05-06','Stripe Sessions','San Francisco','speak','The commerce stage. "He asks before he pays" is the talk.','https://stripesessions.com/'],
+      ['2027-05-25','2027-05-28','Web Summit Vancouver','Vancouver','speak','A drive from Seattle. PITCH and the startup program.','https://vancouver.websummit.com/'],
+      ['2027-06-29','2027-07-01','AI Engineer World’s Fair','San Francisco','speak','The engineering talk: a 2-bit 27B that still picks the right tool. Also where to hire.','https://ai.engineer/'],
+      ['2027-07-26','2027-07-30','Seattle Tech Week','Seattle','host','Anyone can host. Our own Naval mode night at city scale. 2027 dates not posted yet; last year was late July.','https://www.geekwire.com/seattle-tech-week']
+    ];
+    var LANES=[['speak','Sigil speaks'],['demo','Demo'],['host','We host'],['me','I go'],['due','Deadline']];
+    var TAG={speak:'Sigil speaks',demo:'demo',host:'we host',me:'I go',due:'deadline'};
+    var W=900,L=110,Rm=20,T=34,LH=34,H=T+LH*LANES.length+8;
+    var d0=Date.parse('2026-10-01'), d1=Date.parse('2027-08-01');
+    function X(s){return L+(Date.parse(s)-d0)/(d1-d0)*(W-L-Rm);}
+    var svg=el('svg',{viewBox:'0 0 '+W+' '+H,role:'img','aria-label':'Calendar of 17 events from October 2026 to July 2027, in five lanes'});
+    var MN=['Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun','Jul'];
+    for(var m=0;m<10;m++){var dt=new Date(Date.UTC(2026,9+m,1)), x=X(dt.toISOString().slice(0,10)); svg.appendChild(el('line',{'class':'mol',x1:x,x2:x,y1:T-6,y2:H-6})); svg.appendChild(el('text',{'class':'mo',x:x+4,y:T-12},MN[m]+(m===3?' 2027':'')));}
+    LANES.forEach(function(ln,i){var y=T+LH*i+LH/2; svg.appendChild(el('line',{'class':'lane',x1:L,x2:W-Rm,y1:y,y2:y})); svg.appendChild(el('text',{'class':'lanelbl',x:0,y:y+4},ln[1]));});
+    var now=Date.now(); if(now>d0&&now<d1){var tx=L+(now-d0)/(d1-d0)*(W-L-Rm); svg.appendChild(el('line',{'class':'today',x1:tx,x2:tx,y1:T-6,y2:H-6})); svg.appendChild(el('text',{'class':'todayt',x:tx+4,y:T+4},'today'));}
+    var G=[], sel=1, auto=!RM, timer=null;
+    E.forEach(function(e,i){var li=LANES.map(function(l){return l[0];}).indexOf(e[4]), y=T+LH*li+LH/2, x=X(e[0]);
+      var g=el('g',{'class':'ev',tabindex:'0',role:'button','aria-label':e[2]+', '+e[3]});
+      if(e[1]){var x2=X(e[1]); g.appendChild(el('rect',{'class':'k-'+e[4],x:x,y:y-4,width:Math.max(4,x2-x),height:8,rx:4}));}
+      g.appendChild(el('circle',{'class':'k-'+e[4],cx:x,cy:y,r:8}));
+      g.addEventListener('click',function(){auto=false; pick(i);}); g.addEventListener('keydown',function(ev){if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();auto=false;pick(i);}});
+      svg.appendChild(g); G.push(g);});
+    host.appendChild(svg);
+    function fmt(a,b){var o={month:'short',day:'numeric'}, A=new Date(a+'T12:00:00'), s=A.toLocaleDateString('en-US',o); if(b){var B=new Date(b+'T12:00:00'); s+=' to '+(A.getMonth()===B.getMonth()?B.getDate():B.toLocaleDateString('en-US',o));} return s+', '+A.getFullYear();}
+    function pick(i){sel=i; G.forEach(function(g,j){g.classList.toggle('on',j===i);}); var e=E[i];
+      swap(card,'<p class="when">'+fmt(e[0],e[1])+'</p><h3 style="margin-top:4px"><a href="'+e[6]+'">'+e[2]+' <span class="ext">↗</span></a></h3><div class="chips" style="margin:8px 0 10px"><span class="chip">'+e[3]+'</span><span class="chip">'+TAG[e[4]]+'</span></div><p>'+e[5]+'</p><div class="evnav"><button class="pill-btn" type="button" data-d="-1"><span>←</span> Earlier</button><button class="pill-btn" type="button" data-d="1">Next <span class="arrow">→</span></button></div>');
+      card.querySelectorAll('[data-d]').forEach(function(b){b.addEventListener('click',function(){auto=false; pick((sel+(+b.getAttribute('data-d'))+E.length)%E.length);});});}
+    pick(1);
+    onVisible(host,function(v){clearInterval(timer); if(v&&auto) timer=setInterval(function(){if(!auto){clearInterval(timer);return;} pick((sel+1)%E.length);},4200);});
+  })();
+
+  /* talk drafts */
+  var TALKS=[
+    '<p class="meta">Stripe Sessions · due Nov 3</p><p style="margin-top:6px"><b style="color:var(--ink)">He asks before he pays: agentic commerce when the agent lives on your laptop.</b></p><p style="margin-top:8px">Underdog books flights and orders groceries from a model on your own computer, and pays with a one-time Link card the member approves. No server sees the inbox, the cart or the card. What we learned shipping Buy with Link, and what merchants need to change so agents can buy from them.</p>',
+    '<p class="meta">Legalweek, IAPP and HIMSS rooms</p><p style="margin-top:6px"><b style="color:var(--ink)">AI Y3K: build as if everything hackable will be hacked.</b></p><p style="margin-top:8px">At 18 a bug in a popular email app leaked my privileged mail and cost me $100,000. Now AI finds holes faster than people fix them. The only data that can’t leak from a server is data never sent to one. How Underdog passed CASA and Google’s review with no cloud AI at all.</p>',
+    '<p class="meta">Warm first, then reach</p><div class="chips" style="margin-top:8px"><span class="chip">The Generalist</span><span class="chip">Cheeky Pint</span><span class="chip">a16z Show</span><span class="chip">TBPN</span><span class="chip">Latent Space</span><span class="chip">Sources</span><span class="chip">Hard Fork</span><span class="chip">Lenny’s</span></div><p style="margin-top:10px">Mario Gabriele is already on the Wall of Love. John Collison is the Stripe tie. a16z led the round. Every talk ends on the manifesto’s line: everyone deserves loyal AI.</p>'
+  ];
+  tabset('[data-talk]','data-talk',document.getElementById('talkpanel'),TALKS,function(x){return x;});
+
+  /* budget bars */
+  (function(){
+    var host=document.getElementById('bud'); if(!host) return;
+    var B=[['Paid tests','Podcast, newsletter, Reddit, X, search',3000,5000,0],['Naval mode nights ×3','Food and drinks for 40, $20 to $40 a head',2400,4800,0],['San Francisco weeks ×3','Fare plus five nights at per diem',2700,0,0],['CES, two people','Fares and three nights',2500,0,0],['NRF, New York','Pass and travel for merchant meetings',1800,0,0],['Security and creator kits','Contract designer, one week',1500,0,0],['Stripe Sessions ×2','Early-bird, $599 each',1198,0,1],['Bandanas and stickers','For event nights',1000,0,0],['Seattle AI Week','Summit $175, reception $100',275,0,1]];
+    var max=5000, lo=0, hi=0;
+    function m(n){return '$'+n.toLocaleString('en-US');}
+    host.innerHTML=B.map(function(b){lo+=b[2]; hi+=(b[3]||b[2]); return '<div class="r"><span class="t"><b>'+b[0]+'</b><small>'+b[1]+'</small></span><span class="trk'+(b[4]?'':' est')+'"><em style="--b:'+((b[3]||0)/max*100)+'%"></em><i style="--a:'+(b[2]/max*100)+'%"></i></span><span class="v">'+(b[3]?m(b[2])+' to '+m(b[3]).replace('$',''):m(b[2]))+'</span></div>';}).join('')+'<div class="r tot"><span class="t"><b>First 90 days</b></span><span></span><span class="v">'+m(lo)+' to '+m(hi).replace('$','')+'</span></div>';
+  })();
+
+
+  /* scroll progress + calendar fill */
+  var prog=document.getElementById('progress'), tl=document.getElementById('tl');
+  var onScroll=function(){
+    var h=document.documentElement, max=h.scrollHeight-h.clientHeight; if(prog&&max>0) prog.style.width=(100*h.scrollTop/max).toFixed(2)+'%';
+    if(tl){var r=tl.getBoundingClientRect(); var vh=window.innerHeight; var p=(vh*.7-r.top)/r.height; p=Math.max(0,Math.min(1,p)); tl.style.setProperty('--fill',(p*100).toFixed(1)+'%');}
+  };
+  window.addEventListener('scroll',onScroll,{passive:true}); window.addEventListener('resize',onScroll); onScroll();
+
+  var items=document.querySelectorAll('.rv, .tl .ev, #funnel, #corridor');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in'); io.unobserve(e.target);}});},{threshold:.18});
+    items.forEach(function(el){io.observe(el);});
+  } else { items.forEach(function(el){el.classList.add('in');}); }
+
+  /* counters */
+  var counters=document.querySelectorAll('[data-count]');
+  var runCount=function(el){var end=parseInt(el.getAttribute('data-count'),10), t0=null, dur=1400;
+    var step=function(ts){if(!t0)t0=ts; var p=Math.min(1,(ts-t0)/dur); p=1-Math.pow(1-p,3); el.textContent=Math.round(end*p); if(p<1) requestAnimationFrame(step);};
+    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){el.textContent=end;return;}
+    requestAnimationFrame(step);};
+  if('IntersectionObserver' in window){
+    var co=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){runCount(e.target); co.unobserve(e.target);}});},{threshold:.5});
+    counters.forEach(function(el){co.observe(el);});
+  } else { counters.forEach(function(el){el.textContent=el.getAttribute('data-count');}); }
+
+  /* map: light the nodes in sequence once visible */
+  var map=document.getElementById('map');
+  if(map){
+    var nodes=map.querySelectorAll('.node');
+    var light=function(){nodes.forEach(function(n,i){setTimeout(function(){n.classList.add('on');}, 350*i);});};
+    if('IntersectionObserver' in window){
+      var mo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){light(); mo.disconnect();}});},{threshold:.3});
+      mo.observe(map);
+    } else { light(); }
+  }
+})();
+</script>
+</body>
+</html>
